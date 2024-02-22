@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Title>Contact - Finishing Warehouse </Title>
+  </Head>
   <div>
     <HeroComp img="contact" />
     <div class="lg:px-24 px-4 py-12">

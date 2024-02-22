@@ -14,6 +14,9 @@ export default defineComponent({
 </script>
 
 <template>
+  <Head>
+    <Title>Finishing Warehouse - </Title>
+  </Head>
   <div>
     <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
       <source src="/images/hero-vid.mp4" type="video/mp4">
@@ -27,7 +30,9 @@ export default defineComponent({
     <div class="lg:px-20 px-4 py-10">
       <div class="flex justify-between">
         <p class="lg:text-4xl text-2xl">Products Categories</p>
-        <button class="border border-[#0F0F0F] text-sm p-2 my-auto">DISCOVER MORE</button>
+        <NuxtLink to="/products">
+          <button class="border border-[#0F0F0F] text-sm p-2 my-auto">DISCOVER MORE</button>
+        </NuxtLink>
       </div>
       <div class="lg:flex justify-between my-4">
         <div class="lg:w-[32%] lg:mb-0 mb-4 relative">
@@ -44,7 +49,8 @@ export default defineComponent({
         </div>
       </div>
       <div class="pt-24 relative">
-        <img src="/images/quality-seal.png" class="absolute lg:w-auto w-20 lg:top-10 top-14 left-0 right-0 mx-auto" alt="">
+        <img src="/images/quality-seal.png" class="absolute lg:w-auto w-20 lg:top-10 top-14 left-0 right-0 mx-auto"
+          alt="">
         <img src="/images/about.png" class="" alt="">
       </div>
 

@@ -6,7 +6,7 @@ const dropdown = ref(false)
 onMounted(() => {
   setInterval(function () {
     position.value = window?.scrollY
-    console.log(window?.scrollY)
+    // console.log(window?.scrollY)
   }, 1000);
 })
 </script>
@@ -14,7 +14,9 @@ onMounted(() => {
 <template>
   <div
     :class="position >= 574 ? 'fixed z-10 top-0 w-full bg-white flex justify-between lg:px-20 px-4 py-4' : 'fixed z-10 top-0 w-full flex justify-between lg:px-20 px-4 py-4'">
-    <img class="z-10" src="/images/finishing-warehouse-logo.png" />
+    <NuxtLink to="/">
+      <img class="z-10" src="/images/finishing-warehouse-logo.png" />
+    </NuxtLink>
     <img @click="toggle = !toggle" class="lg:hidden block cursor-pointer" src="/images/icons/bars.svg" alt="">
     <div class="w-[35%] z-10  lg:flex hidden justify-between my-auto text-lg">
       <NuxtLink to="/">

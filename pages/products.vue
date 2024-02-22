@@ -1,4 +1,8 @@
 <template>
+  
+  <Head>
+    <Title>Products - Finishing Warehouse </Title>
+  </Head>
   <div>
     <HeroComp img="products" />
     <div class="lg:px-20 px-4 py-12">

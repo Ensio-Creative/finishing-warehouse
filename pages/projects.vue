@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Title>Projects - Finishing Warehouse </Title>
+  </Head>
   <div>
     <HeroComp img="projects" />
     <div class="lg:flex justify-between lg:px-20 px-4 py-12">
