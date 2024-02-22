@@ -1,23 +1,108 @@
 <script setup lang="ts">
-const position = ref(false)
-
-
-// setInterval(function () {
-//   position.value = window?.scrollY
-//   console.log(position)
-// }, 5000);
-
+const position = ref(0)
+const toggle = ref(false)
+const products = ref(false)
+const dropdown = ref(false)
+onMounted(() => {
+  setInterval(function () {
+    position.value = window?.scrollY
+    console.log(window?.scrollY)
+  }, 1000);
+})
 </script>
 
 <template>
-  <div :class="position ? 'fixed z-10 top-0 w-full bg-white flex justify-between px-20 py-4' : 'fixed z-10 top-0 w-full flex justify-between px-20 py-4'">
-    <img src="/images/finishing-warehouse-logo.png" />
-    <div class="w-[35%] flex justify-between my-auto text-lg">
-      <p>Home</p>
-      <p>Products</p>
-      <p>Projects</p>
-      <p>About us</p>
-      <p>Contact</p>
+  <div
+    :class="position >= 574 ? 'fixed z-10 top-0 w-full bg-white flex justify-between lg:px-20 px-4 py-4' : 'fixed z-10 top-0 w-full flex justify-between lg:px-20 px-4 py-4'">
+    <img class="z-10" src="/images/finishing-warehouse-logo.png" />
+    <img @click="toggle = !toggle" class="lg:hidden block cursor-pointer" src="/images/icons/bars.svg" alt="">
+    <div class="w-[35%] z-10  lg:flex hidden justify-between my-auto text-lg">
+      <NuxtLink to="/">
+        <p>Home</p>
+      </NuxtLink>
+      <p @click="dropdown = !dropdown" class="flex cursor-pointer">Products <img class="my-auto ml-2"
+          src="/images/icons/more.svg" alt=""> </p>
+      <NuxtLink to="/projects">
+        <p>Projects</p>
+      </NuxtLink>
+      <NuxtLink to="/about">
+        <p>About us</p>
+      </NuxtLink>
+      <NuxtLink to="/contact">
+        <p>Contact</p>
+      </NuxtLink>
+    </div>
+    <div v-show="dropdown" class="w-full bg-white absolute top-0 left-0 h-screen">
+      <div class="flex px-20 py-32">
+        <div class="w-[12.5%] relative">
+          <img src="/images/products/1.png" class="object-cover w-full h-80" alt="">
+          <div class="-rotate-90 text-xl absolute text-white bottom-20 -right-12">Bathroom Finish</div>
+          <img class="absolute top-3 right-3 w-6" src="/images/icons/arrow.png" alt="">
+        </div>
+        <div class="w-[12.5%] relative">
+          <img src="/images/products/2.png" class="object-cover w-full h-80" alt="">
+          <div class="-rotate-90 text-xl absolute text-white bottom-14 -right-6">Wall Finish</div>
+          <img class="absolute top-3 right-3 w-6" src="/images/icons/arrow.png" alt="">
+        </div>
+        <div class="w-[12.5%] relative">
+          <img src="/images/products/3.png" class="object-cover h-80 w-full" alt="">
+          <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-11">Kitchen Finish</div>
+          <img class="absolute top-3 right-3 w-6" src="/images/icons/arrow.png" alt="">
+        </div>
+        <div class="w-[12.5%] relative">
+          <img src="/images/products/4.png" class="object-cover w-full h-80" alt="">
+          <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-10">Indoor Finish</div>
+          <img class="absolute top-3 right-3 w-6" src="/images/icons/arrow.png" alt="">
+        </div>
+        <div class="w-[12.5%] relative">
+          <img src="/images/products/5.png" class="object-cover h-80 w-full" alt="">
+          <div class="-rotate-90 text-xl absolute text-white bottom-20 -right-12">Outdoor Finish</div>
+          <img class="absolute top-3 right-3 w-6" src="/images/icons/arrow.png" alt="">
+        </div>
+        <div class="w-[12.5%] relative">
+          <img src="/images/products/6.png" class="object-cover h-80 w-full" alt="">
+          <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div>
+          <img class="absolute top-3 right-3 w-6" src="/images/icons/arrow.png" alt="">
+        </div>
+        <div class="w-[12.5%] relative">
+          <img src="/images/products/7.png" class="object-cover h-80 w-full" alt="">
+          <div class="-rotate-90 text-xl absolute text-white bottom-12 -right-4">Lighting</div>
+          <img class="absolute top-3 right-3 w-6" src="/images/icons/arrow.png" alt="">
+        </div>
+        <div class="w-[12.5%] relative">
+          <img src="/images/products/8.png" class="object-cover h-80 w-full" alt="">
+          <div class="-rotate-90 text-xl absolute text-white bottom-12 -right-4">Curtains</div>
+          <img class="absolute top-3 right-3 w-6" src="/images/icons/arrow.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div v-if="toggle" class="fixed top-0 left-0 w-full p-6 h-screen bg-white">
+      <img @click="toggle = false" class="ml-auto cursor-pointer" src="/images/icons/close.svg" alt="">
+      <div class="border-b py-3 flex flex-wrap justify-between mb-4 mt-12 border-[#D9D9D9]">
+        <p class="text-3xl ">Products</p>
+        <img v-if="products === false" @click="products = !products" class="w-6 cursor-pointer"
+          src="/images/icons/plus.svg" alt="">
+        <img v-else class="w-6 cursor-pointer" @click="products = !products" src="/images/icons/hide.svg" alt="">
+
+        <div class="w-full" v-show="products">
+          jello
+        </div>
+      </div>
+      <div class="border-b my-4 border-[#D9D9D9]">
+        <NuxtLink to="/projects" @click="toggle = !toggle">
+          <p class="text-3xl py-3">Projects</p>
+        </NuxtLink>
+      </div>
+      <div class="border-b my-4 border-[#D9D9D9]">
+        <NuxtLink to="/about" @click="toggle = !toggle">
+          <p class="text-3xl py-3">About us</p>
+        </NuxtLink>
+      </div>
+      <div class="border-b my-4 border-[#D9D9D9]">
+        <NuxtLink to="/contact" @click="toggle = !toggle">
+          <p class="text-3xl py-3">Contact</p>
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>
