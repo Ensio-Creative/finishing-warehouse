@@ -15,7 +15,7 @@ export default defineComponent({
 
 <template>
   <div>
-    <video autoplay loop muted class="w-full lg:-mt-10 object-cover h-[110vh]">
+    <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
       <source src="/images/hero-vid.mp4" type="video/mp4">
     </video>
     <div class="bg-[#F6F6F6] lg:p-20 p-6">
@@ -57,9 +57,9 @@ export default defineComponent({
           </div>
         </div>
         <carousel ref="myCarousel" :items-to-show="1.8" :wrapAround="true">
-          <slide v-for="slide in 2" :key="slide">
+          <slide v-for="slide in 3" :key="slide">
             <div class="mr-6">
-              <img class="w-full" :src="'/images/projects/project-' + slide + '.png'" alt="">
+              <img class="w-full" :src="'/images/projects/projects' + slide + '.png'" alt="">
             </div>
           </slide>
         </carousel>
