@@ -68,7 +68,7 @@ export default defineComponent({
             <img @click="myCarousel.next()" class="w-12 cursor-pointer" src="/images/next.png" alt="">
           </div>
         </div>
-        <Carousel ref="myCarousel" :items-to-show="1.8" :wrapAround="true">
+        <Carousel ref="myCarousel" :items-to-show="1.7">
           <slide v-for="slide in 3" :key="slide">
             <div class="mr-6">
               <img class="w-full" :src="'/images/projects/projects' + slide + '.png'" alt="">
@@ -77,10 +77,12 @@ export default defineComponent({
         </Carousel>
       </div>
       <div class="pt-6">
-        <div class="lg:flex my-8 justify-between">
-          <p class="lg:text-4xl text-2xl lg:mb-0 mb-4">Brand Partners</p>
-          <div class="lg:w-[53%] flex justify-between flex-wrap">
-            <div class="mb-3 lg:w-[32%] w-[48%]" v-for="index in 6" :key="index">
+        <div class=" my-8">
+          <div class="border-b py-3 my-6 vorder-[#7D7D7D]">
+            <p class="lg:text-4xl text-2xl lg:mb-0 mb-4">Brand Partners</p>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <div class="mb-3 lg:w-[15%] w-[48%]" v-for="index in 6" :key="index">
               <img class="" :src="'/images/brands/00' + index + '.png'" alt="">
             </div>
           </div>
