@@ -7,13 +7,13 @@ export default {
     return {
       slider: [
         "",
-        "Bathroom Finish",
+        "Bathroom ",
         "Wall Finish",
-        "Kitchen Finish",
-        "Indoor Finish",
-        "Outdoor Finish",
+        "Kitchen ",
+        "Indoor ",
+        "Outdoor ",
         "Home Decor",
-        "Lighting",
+        "Lighting ",
         "Curtains"
       ]
     }
@@ -27,11 +27,11 @@ export default {
 
 <template>
   <div class="my-6">
-    <carousel :items-to-show="3.5">
+    <carousel :items-to-show="3.5" >
       <slide v-for="slide in 8" :key="slide">
         <div class="relative">
           <img :src="'/images/products/' + slide + '.png'" class="object-cover w-full h-80" alt="">
-          <div class="-rotate-90 text-base absolute text-white bottom-14 text-left -right-6">{{ slider[slide] }}</div>
+          <div class="-rotate-90 text-base absolute text-white bottom-10 text-left -right-4">{{ slider[slide] }}</div>
           <img class="absolute top-3 right-3 w-6" src="/images/icons/arrow.png" alt="">
         </div>
       </slide>
