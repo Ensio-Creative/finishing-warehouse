@@ -87,7 +87,7 @@ onMounted(() => {
         <img v-else class="w-6 cursor-pointer" @click="products = !products" src="/images/icons/hide.svg" alt="">
 
         <div class="w-full" v-show="products">
-          jello
+          <MobileProducts />
         </div>
       </div>
       <div class="border-b my-4 border-[#D9D9D9]">

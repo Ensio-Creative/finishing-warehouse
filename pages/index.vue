@@ -4,6 +4,12 @@ import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
 export default defineComponent({
+  setup() {
+    const myCarousel = ref(null)
+    return {
+      myCarousel
+    }
+  },
   components: {
     Carousel,
     Slide,
@@ -58,23 +64,23 @@ export default defineComponent({
         <div class="flex my-8 justify-between">
           <p class="lg:text-4xl text-2xl">Projects</p>
           <div class="flex w-28 justify-between">
-            <img class="w-12" src="/images/prev.png" alt="">
-            <img class="w-12" src="/images/next.png" alt="">
+            <img @click="myCarousel.prev()" class="w-12 cursor-pointer" src="/images/prev.png" alt="">
+            <img @click="myCarousel.next()" class="w-12 cursor-pointer" src="/images/next.png" alt="">
           </div>
         </div>
-        <carousel ref="myCarousel" :items-to-show="1.8" :wrapAround="true">
+        <Carousel ref="myCarousel" :items-to-show="1.8" :wrapAround="true">
           <slide v-for="slide in 3" :key="slide">
             <div class="mr-6">
               <img class="w-full" :src="'/images/projects/projects' + slide + '.png'" alt="">
             </div>
           </slide>
-        </carousel>
+        </Carousel>
       </div>
       <div class="pt-6">
         <div class="lg:flex my-8 justify-between">
           <p class="lg:text-4xl text-2xl lg:mb-0 mb-4">Brand Partners</p>
           <div class="lg:w-[53%] flex justify-between flex-wrap">
-            <div class="mb-3 lg:w-auto w-[48%]" v-for="index in 6" :key="index">
+            <div class="mb-3 lg:w-[32%] w-[48%]" v-for="index in 6" :key="index">
               <img class="" :src="'/images/brands/00' + index + '.png'" alt="">
             </div>
           </div>
