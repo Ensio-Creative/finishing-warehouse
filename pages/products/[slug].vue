@@ -28,7 +28,7 @@ const products = ref([
   <div>
     <HeroComp :img="$route.params.slug" />
     <div class="lg:px-20 py-10 px-4">
-      <p class="lg:text-4xl text-2xl">{{ products[$route.params.slug].title }}</p>
+      <p class="lg:text-4xl font-semibold text-2xl">{{ products[$route.params.slug].title }}</p>
     </div>
   </div>
 </template>

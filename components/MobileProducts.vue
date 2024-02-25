@@ -7,11 +7,11 @@ export default {
     return {
       slider: [
         "",
-        "Bathroom ",
+        "Bathroom Finish",
         "Wall Finish",
-        "Kitchen ",
-        "Indoor ",
-        "Outdoor ",
+        "Kitchen Finish",
+        "Indoor Finish",
+        "Outdoor Finish",
         "Home Decor",
         "Lighting ",
         "Curtains"
@@ -30,16 +30,22 @@ export default {
 
 <template>
   <div class="my-6">
-    <carousel :items-to-show="3.5">
+    <div v-for="slide in 8" :key="slide">
+      <NuxtLink :to="'/products/' + slide" @click="toggle">
+        <div class="text-xl">{{
+          slider[slide] }}</div>
+      </NuxtLink>
+    </div>
+
+    <!-- <carousel :items-to-show="3.5">
       <slide v-for="slide in 8" :key="slide">
         <div class="relative">
           <img :src="'/images/products/' + slide + '.png'" class="object-cover w-full h-80" alt="">
-          <div class="-rotate-90 text-base absolute text-white bottom-10 text-left -right-4">{{ slider[slide] }}</div>
           <NuxtLink :to="'/products/' + slide" @click="toggle">
             <img class="absolute top-3 right-3 cursor-pointer w-6" src="/images/icons/arrow.png" alt="">
           </NuxtLink>
         </div>
       </slide>
-    </carousel>
+    </carousel> -->
   </div>
 </template>
