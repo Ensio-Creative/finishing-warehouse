@@ -39,7 +39,7 @@ export default defineComponent({
     <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
       <source src="/images/hero-vid.mp4" type="video/mp4">
     </video>
-    <div class="bg-[#F6F6F6] h-[400px] lg:py-32 px-6 py-16">
+    <div class="bg-[#F6F6F6] lg:h-[400px] lg:py-32 px-6 py-16">
       <p class="lg:text-4xl text-xl lg:w-[60%] mx-auto text-center">Discover the perfect blend of glamour and quality with
         endless rides
         of appealing experiences for your building
@@ -93,7 +93,7 @@ export default defineComponent({
       </div>
       <div class="pt-6">
         <div class="mt-8">
-          <div class="border-b py-6 my-6 vorder-[#7D7D7D]">
+          <div class="border-b lg:py-6 my-6 vorder-[#7D7D7D]">
             <p class="lg:text-4xl font-semibold text-2xl lg:mb-0 mb-4">Brand Partners</p>
           </div>
           <div class="flex justify-between flex-wrap">

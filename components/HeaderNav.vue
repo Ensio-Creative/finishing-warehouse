@@ -113,7 +113,7 @@ const setToggle = () => {
         </NuxtLink>
       </div>
       <div class="border-b py-3 flex flex-wrap justify-between my-4 border-[#D9D9D9]">
-        <NuxtLink to="/products">
+        <NuxtLink to="/products" @click="toggle = !toggle">
           <p class="text-3xl ">Products</p>
         </NuxtLink>
         <img v-if="products === false" @click="products = !products" class="w-6 cursor-pointer"
