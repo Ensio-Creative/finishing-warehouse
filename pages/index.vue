@@ -51,16 +51,22 @@ export default defineComponent({
       </div>
       <div class="lg:flex justify-between my-4">
         <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
-          <img class="w-full" src="/images/categories/001.png" alt="">
-          <p class="lg:text-3xl text-2xl absolute bottom-5 text-white left-5">Bathroom Finish</p>
+          <NuxtLink to="/products/1">
+            <img class="w-full" src="/images/categories/001.png" alt="">
+            <p class="lg:text-3xl text-2xl absolute bottom-5 text-white left-5">Bathroom Finish</p>
+          </NuxtLink>
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
-          <img class="w-full" src="/images/categories/002.png" alt="">
-          <p class=" lg:text-3xl text-2xl  absolute bottom-5 text-white left-5">Wall Finish</p>
+          <NuxtLink to="/products/2">
+            <img class="w-full" src="/images/categories/002.png" alt="">
+            <p class=" lg:text-3xl text-2xl  absolute bottom-5 text-white left-5">Wall Finish</p>
+          </NuxtLink>
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
-          <img class="w-full" src="/images/categories/003.png" alt="">
-          <p class=" lg:text-3xl text-2xl  absolute bottom-5 text-white left-5">Kitchen Finish</p>
+          <NuxtLink to="/products/3">
+            <img class="w-full" src="/images/categories/003.png" alt="">
+            <p class=" lg:text-3xl text-2xl  absolute bottom-5 text-white left-5">Kitchen Finish</p>
+          </NuxtLink>
         </div>
       </div>
       <div class="text-center">
