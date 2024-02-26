@@ -52,15 +52,15 @@ export default defineComponent({
       <div class="lg:flex justify-between my-4">
         <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
           <img class="w-full" src="/images/categories/001.png" alt="">
-          <p class="lg:text-3xl text-3xl absolute bottom-5 text-white left-5">Bathroom Finish</p>
+          <p class="lg:text-3xl text-2xl absolute bottom-5 text-white left-5">Bathroom Finish</p>
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <img class="w-full" src="/images/categories/002.png" alt="">
-          <p class=" lg:text-3xl text-3xl  absolute bottom-5 text-white left-5">Wall Finish</p>
+          <p class=" lg:text-3xl text-2xl  absolute bottom-5 text-white left-5">Wall Finish</p>
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <img class="w-full" src="/images/categories/003.png" alt="">
-          <p class=" lg:text-3xl text-3xl  absolute bottom-5 text-white left-5">Kitchen Finish</p>
+          <p class=" lg:text-3xl text-2xl  absolute bottom-5 text-white left-5">Kitchen Finish</p>
         </div>
       </div>
       <div class="text-center">
