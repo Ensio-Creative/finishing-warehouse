@@ -26,10 +26,12 @@ const setToggle = () => {
       <NuxtLink to="/">
         <p>Home</p>
       </NuxtLink>
-      <p @click="dropdown = !dropdown" class="flex cursor-pointer">Products
-        <img v-if="dropdown" class="my-auto ml-2" src="/images/icons/more.svg" alt="">
-        <img v-else class="my-auto rotate-180 ml-2" src="/images/icons/more.svg" alt="">
-
+      <p class="flex cursor-pointer">
+        <NuxtLink to="/products">
+          Products
+        </NuxtLink>
+        <img v-if="dropdown" @click="dropdown = !dropdown" class="my-auto ml-2" src="/images/icons/more.svg" alt="">
+        <img v-else @click="dropdown = !dropdown" class="my-auto rotate-180 ml-2" src="/images/icons/more.svg" alt="">
       </p>
       <NuxtLink to="/projects">
         <p>Projects</p>
@@ -111,7 +113,9 @@ const setToggle = () => {
         </NuxtLink>
       </div>
       <div class="border-b py-3 flex flex-wrap justify-between my-4 border-[#D9D9D9]">
-        <p class="text-3xl ">Products</p>
+        <NuxtLink to="/products">
+          <p class="text-3xl ">Products</p>
+        </NuxtLink>
         <img v-if="products === false" @click="products = !products" class="w-6 cursor-pointer"
           src="/images/icons/plus.svg" alt="">
         <img v-else class="w-6 cursor-pointer" @click="products = !products" src="/images/icons/hide.svg" alt="">

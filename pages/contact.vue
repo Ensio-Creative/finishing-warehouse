@@ -10,16 +10,16 @@
         and respond as soon as
         we can.</p>
       <div class="lg:flex justify-between my-10">
-        <div class="border lg:my-0 my-3 lg:w-[32%] border-[#7D7D7D] p-6 h-52">
+        <div class="border lg:my-0 my-3 lg:w-[32%] border-[#CBCBCB] p-6 h-52">
           <img src="/images/icons/img-1.png" class="w-10" alt="">
           <p class="mt-14 text-xl">Suite D28, Efab Mall, Garki, <br>
             Area 11, FCT, Abuja</p>
         </div>
-        <div class="border lg:my-0 my-3 lg:w-[32%] border-[#7D7D7D] p-6">
+        <div class="border lg:my-0 my-3 lg:w-[32%] border-[#CBCBCB] p-6">
           <img src="/images/icons/img-2.png" class="w-10" alt="">
           <p class="mt-20 text-xl">info@finishingwarehouse.com</p>
         </div>
-        <div class="border lg:my-0 my-3 lg:w-[32%] border-[#7D7D7D] p-6">
+        <div class="border lg:my-0 my-3 lg:w-[32%] border-[#CBCBCB] p-6">
           <img src="/images/icons/img-3.png" class="w-10" alt="">
           <p class="mt-20 text-xl">+234 9052766460</p>
         </div>

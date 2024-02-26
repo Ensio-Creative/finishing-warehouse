@@ -39,7 +39,7 @@ export default defineComponent({
     <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
       <source src="/images/hero-vid.mp4" type="video/mp4">
     </video>
-    <div class="bg-[#F6F6F6] lg:p-40 px-6 py-16">
+    <div class="bg-[#F6F6F6] h-[400px] lg:py-32 px-6 py-16">
       <p class="lg:text-4xl text-xl lg:w-[60%] mx-auto text-center">Discover the perfect blend of glamour and quality with
         endless rides
         of appealing experiences for your building
@@ -48,30 +48,30 @@ export default defineComponent({
     <div class="lg:px-20 px-4 py-10">
       <div class="flex justify-between">
         <p class="lg:text-4xl font-semibold text-2xl">Products Categories</p>
-
       </div>
       <div class="lg:flex justify-between my-4">
         <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
           <img class="w-full" src="/images/categories/001.png" alt="">
-          <p class="lg:text-4xl text-3xl absolute bottom-5 text-white left-5">Bathroom Finish</p>
+          <p class="lg:text-3xl text-3xl absolute bottom-5 text-white left-5">Bathroom Finish</p>
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <img class="w-full" src="/images/categories/002.png" alt="">
-          <p class=" lg:text-4xl text-3xl  absolute bottom-5 text-white left-5">Wall Finish</p>
+          <p class=" lg:text-3xl text-3xl  absolute bottom-5 text-white left-5">Wall Finish</p>
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <img class="w-full" src="/images/categories/003.png" alt="">
-          <p class=" lg:text-4xl text-3xl  absolute bottom-5 text-white left-5">Kitchen Finish</p>
+          <p class=" lg:text-3xl text-3xl  absolute bottom-5 text-white left-5">Kitchen Finish</p>
         </div>
       </div>
       <div class="text-center">
         <NuxtLink to="/products">
-          <button class="border border-[#0F0F0F] text-sm w-full p-3 my-auto">DISCOVER MORE</button>
+          <button class="border-2 border-[#0F0F0F] text-sm lg:w-52 w-full font-semibold p-2 my-auto">DISCOVER
+            MORE</button>
         </NuxtLink>
       </div>
-      <div class="pt-24 relative">
-        <img src="/images/quality-seal.png" class="absolute lg:w-auto w-20 lg:top-10 top-14 left-0 right-0 mx-auto"
-          alt="">
+      <div class="pt-12 relative">
+        <!-- <img src="/images/quality-seal.png" class="absolute lg:w-auto w-20 lg:top-10 top-14 left-0 right-0 mx-auto"
+          alt=""> -->
         <img src="/images/about.png" class="" alt="">
       </div>
 
