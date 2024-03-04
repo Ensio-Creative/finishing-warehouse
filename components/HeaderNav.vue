@@ -19,7 +19,7 @@ const setToggle = () => {
   <div
     :class="position >= 574 ? 'fixed z-30 top-0 w-full bg-white flex justify-between lg:px-20 px-4 py-4' : 'fixed z-30 top-0 w-full flex justify-between lg:px-20 px-4 py-4'">
     <NuxtLink @click="dropdown = false" to="/" class="z-30">
-      <img src="/images/finishing-warehouse-logo.svg" />
+      <img class="lg:w-auto w-28 my-auto" src="/images/finishing-warehouse-logo.svg" />
     </NuxtLink>
     <img @click="toggle = !toggle" class="lg:hidden block cursor-pointer" src="/images/icons/bars.svg" alt="">
     <div class="w-[40%] z-10  lg:flex hidden justify-between my-auto text-lg">
