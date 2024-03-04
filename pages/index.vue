@@ -78,15 +78,15 @@ export default defineComponent({
       <div class="pt-12 relative">
         <!-- <img src="/images/quality-seal.png" class="absolute lg:w-auto w-20 lg:top-10 top-14 left-0 right-0 mx-auto"
           alt=""> -->
-        <img src="/images/about.png" class="" alt="">
+        <img src="/images/product-chair.png" class="" alt="">
       </div>
 
       <div class="pt-6">
         <div class="flex my-8 justify-between">
           <p class="lg:text-4xl font-semibold text-2xl">Projects</p>
           <div class="flex w-28 justify-between">
-            <img @click="myCarousel.prev()" class="w-12 cursor-pointer" src="/images/prev.png" alt="">
-            <img @click="myCarousel.next()" class="w-12 cursor-pointer" src="/images/next.png" alt="">
+            <img @click="myCarousel.prev()" class="w-12 cursor-pointer" src="/images/prev.svg" alt="">
+            <img @click="myCarousel.next()" class="w-12 cursor-pointer" src="/images/next.svg" alt="">
           </div>
         </div>
         <Carousel ref="myCarousel" :breakpoints="breakpoints">
