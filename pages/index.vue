@@ -36,9 +36,24 @@ export default defineComponent({
     <Title>Finishing Warehouse - </Title>
   </Head>
   <div>
-    <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
+    <div class="relative">
+      <Carousel ref="myCarousel" :autoplay="6000" :wrap-around="true" :transition="600">
+        <slide v-for="slide in 4" :key="slide">
+          <div class="">
+            <img class="w-screen object-cover lg:h-[100vh] h-[90vh]" :src="'/images/hero/slide-' + slide + '.png'" alt="">
+          </div>
+        </slide>
+      </Carousel>
+      <div class="bg-gradient-to-t from-[#FFFFFF00] from-40% to-[#FFFFFF] absolute top-0 w-full lg:h-[100vh] h-[90vh] ">
+      </div>
+      <div class="absolute lg:top-72 top-52 left-0 right-0 text-center">
+        <p class="text-5xl text-white font-bold">Embrace the power of <br>
+          quality and aesthetics</p>
+      </div>
+    </div>
+    <!-- <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
       <source src="/images/hero-vid.mp4" type="video/mp4">
-    </video>
+    </video> -->
     <div class="bg-[#F6F6F6] lg:h-[400px] lg:py-32 px-6 py-16">
       <p class="lg:text-4xl text-xl lg:w-[60%] mx-auto text-center">Discover the perfect blend of glamour and quality with
         endless rides
@@ -78,15 +93,15 @@ export default defineComponent({
       <div class="pt-12 relative">
         <!-- <img src="/images/quality-seal.png" class="absolute lg:w-auto w-20 lg:top-10 top-14 left-0 right-0 mx-auto"
           alt=""> -->
-        <img src="/images/product-chair.png" class="" alt="">
+        <img src="/images/product-chair.png" class="lg:h-auto h-[209px] object-cover" alt="">
       </div>
 
       <div class="pt-6">
         <div class="flex my-8 justify-between">
           <p class="lg:text-4xl font-semibold text-2xl">Projects</p>
-          <div class="flex w-28 justify-between">
+          <div class="flex lg:w-28 w- justify-between">
             <img @click="myCarousel.prev()" class="w-12 cursor-pointer" src="/images/prev.svg" alt="">
-            <img @click="myCarousel.next()" class="w-12 cursor-pointer" src="/images/next.svg" alt="">
+            <img @click="myCarousel.next()" class="w-12 lg:ml-0 ml-2 cursor-pointer" src="/images/next.svg" alt="">
           </div>
         </div>
         <Carousel ref="myCarousel" :breakpoints="breakpoints">
