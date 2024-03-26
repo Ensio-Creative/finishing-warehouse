@@ -17,12 +17,12 @@ const setToggle = () => {
 
 <template>
   <div
-    :class="position >= 574 ? 'fixed z-30 top-0 w-full bg-white flex justify-between lg:px-20 px-4 py-4' : 'fixed z-30 top-0 w-full flex justify-between lg:px-20 px-4 py-4'">
+    class="fixed z-30 top-0 w-full bg-[#FFFFFFCC] flex justify-between lg:px-20 px-4 py-5">
     <NuxtLink @click="dropdown = false" to="/" class="z-30">
-      <img class="lg:w-auto w-28 my-auto" src="/images/finishing-warehouse-logo.svg" />
+      <img class="lg:w-auto w-28 my-auto" src="/images/logo.png" />
     </NuxtLink>
     <img @click="toggle = !toggle" class="lg:hidden block cursor-pointer" src="/images/icons/bars.svg" alt="">
-    <div class="w-[40%] z-10  lg:flex hidden justify-between my-auto text-lg">
+    <div class="w-[40%] z-10 uppercase lg:flex hidden justify-between my-auto text-sm">
       <NuxtLink to="/">
         <p>Home</p>
       </NuxtLink>
@@ -49,58 +49,58 @@ const setToggle = () => {
           <NuxtLink to="/products/1" @click="dropdown = !dropdown">
             <img src="/images/products/1.png" class="object-cover w-full h-80" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-20 -right-12">Bathroom Finish</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.png" alt="">
+            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
         </div>
         <div class="w-[12.5%] relative">
           <NuxtLink to="/products/2" @click="dropdown = !dropdown">
             <img src="/images/products/2.png" class="object-cover w-full h-80" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-14 -right-6">Wall Finish</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.png" alt="">
+            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
         </div>
         <div class="w-[12.5%] relative">
           <NuxtLink to="/products/3" @click="dropdown = !dropdown">
             <img src="/images/products/3.png" class="object-cover h-80 w-full" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-11">Kitchen Finish</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.png" alt="">
+            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
         </div>
         <div class="w-[12.5%] relative">
           <NuxtLink to="/products/4" @click="dropdown = !dropdown">
             <img src="/images/products/4.png" class="object-cover w-full h-80" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-10">Indoor Finish</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.png" alt="">
+            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
         </div>
         <div class="w-[12.5%] relative">
           <NuxtLink to="/products/5" @click="dropdown = !dropdown">
             <img src="/images/products/5.png" class="object-cover h-80 w-full" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-20 -right-12">Outdoor Finish</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.png" alt="">
+            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
         </div>
         <div class="w-[12.5%] relative">
           <NuxtLink to="/products/6" @click="dropdown = !dropdown">
             <img src="/images/products/6.png" class="object-cover h-80 w-full" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.png" alt="">
+            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
         </div>
         <div class="w-[12.5%] relative">
           <NuxtLink to="/products/7" @click="dropdown = !dropdown">
             <img src="/images/products/7.png" class="object-cover h-80 w-full" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-12 -right-4">Lighting</div>
-            <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.png" alt="">
+            <!-- <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div> -->
+            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
         </div>
         <div class="w-[12.5%] relative">
           <NuxtLink to="/products/8" @click="dropdown = !dropdown">
             <img src="/images/products/8.png" class="object-cover h-80 w-full" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-12 -right-4">Curtains</div>
-            <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.png" alt="">
+            <!-- <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div> -->
+            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
         </div>
       </div>

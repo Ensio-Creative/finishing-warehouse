@@ -32,7 +32,7 @@ const products = ref([
       <div class="flex flex-wrap justify-between">
         <div class="mb-3 lg:w-[33%]" v-for="slide in 6" :key="slide">
           <img :src="'/images/products/1/img' + slide + '.png'" alt="">
-          <p class="p-2">{{ products[$route.params.slug].title }}</p>
+          <p class="p-2 text-center text-sm">{{ products[$route.params.slug].title }}</p>
         </div>
       </div>
     </div>

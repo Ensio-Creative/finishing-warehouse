@@ -16,11 +16,11 @@
             Area 11, FCT, Abuja</p>
         </div>
         <div class="border lg:my-0 my-3 lg:w-[32%] border-[#CBCBCB] p-6">
-          <img src="/images/icons/img-2.png" class="w-10" alt="">
+          <img src="/images/icons/img-3.png" class="w-10" alt="">
           <p class="mt-20 text-xl">info@finishingwarehouse.com</p>
         </div>
         <div class="border lg:my-0 my-3 lg:w-[32%] border-[#CBCBCB] p-6">
-          <img src="/images/icons/img-3.png" class="w-10" alt="">
+          <img src="/images/icons/img-2.png" class="w-10" alt="">
           <p class="mt-20 text-xl">+234 9052766460</p>
         </div>
       </div>
@@ -49,7 +49,7 @@
           <textarea placeholder="Your Message*"
             class="p-4 text-sm border text-white border-white h-72 focus:outline-none w-full bg-transparent"></textarea>
         </div>
-        <button class="bg-[#FBC06B] w-full p-3">SEND MESSAGE</button>
+        <button class="bg-[#84240C] text-white w-full p-3">SEND MESSAGE</button>
       </div>
     </div>
   </div>

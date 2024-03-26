@@ -32,15 +32,17 @@ export default defineComponent({
 </script>
 
 <template>
+
   <Head>
     <Title>Finishing Warehouse - </Title>
   </Head>
   <div>
     <div class="relative">
       <Carousel ref="myCarousel" :autoplay="6000" :wrap-around="true" :transition="600">
-        <slide v-for="slide in 4" :key="slide">
+        <slide v-for="slide in 3" :key="slide">
           <div class="">
-            <img class="w-screen object-cover lg:h-[100vh] h-[90vh]" :src="'/images/hero/slide-' + slide + '.png'" alt="">
+            <img class="w-screen object-cover lg:h-[100vh] h-[90vh]" :src="'/images/hero/slide-' + slide + '.png'"
+              alt="">
           </div>
         </slide>
       </Carousel>
@@ -55,7 +57,8 @@ export default defineComponent({
       <source src="/images/hero-vid.mp4" type="video/mp4">
     </video> -->
     <div class="bg-[#F6F6F6] lg:h-[400px] lg:py-32 px-6 py-16">
-      <p class="lg:text-4xl text-xl lg:w-[60%] mx-auto text-center">Discover the perfect blend of glamour and quality with
+      <p class="lg:text-4xl text-xl lg:w-[60%] mx-auto text-center">Discover the perfect blend of glamour and quality
+        with
         endless rides
         of appealing experiences for your building
         and spaces.</p>
@@ -68,32 +71,48 @@ export default defineComponent({
         <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
           <NuxtLink to="/products/1">
             <img class="w-full" src="/images/categories/001.png" alt="">
-            <p class="lg:text-3xl text-2xl absolute bottom-5 text-white left-5">Bathroom Finish</p>
+            <div class="bg-[#0F0F0F] flex justify-between p-5">
+              <p class="lg:text-3xl text-2xl text-white ">Bathroom Finish</p>
+              <img src="/images/icons/arrow-1.svg" alt="">
+            </div>
           </NuxtLink>
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <NuxtLink to="/products/2">
             <img class="w-full" src="/images/categories/002.png" alt="">
-            <p class=" lg:text-3xl text-2xl  absolute bottom-5 text-white left-5">Wall Finish</p>
+            <div class="bg-[#0F0F0F] flex justify-between p-5">
+              <p class=" lg:text-3xl text-2xl  text-white ">Wall Finish</p>
+              <img src="/images/icons/arrow-1.svg" alt="">
+            </div>
           </NuxtLink>
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <NuxtLink to="/products/3">
             <img class="w-full" src="/images/categories/003.png" alt="">
-            <p class=" lg:text-3xl text-2xl  absolute bottom-5 text-white left-5">Kitchen Finish</p>
+            <div class="bg-[#0F0F0F] flex justify-between p-5">
+              <p class=" lg:text-3xl text-2xl text-white ">Kitchen Finish</p>
+              <img src="/images/icons/arrow-1.svg" alt="">
+            </div>
           </NuxtLink>
         </div>
       </div>
       <div class="text-center">
         <NuxtLink to="/products">
-          <button class="border-2 border-[#0F0F0F] text-sm lg:w-52 w-full font-semibold p-2 my-auto">DISCOVER
+          <button
+            class="border border-[#84240C] text-sm text-[#84240C] lg:w-52 w-full font-semibold p-2 my-auto">DISCOVER
             MORE</button>
         </NuxtLink>
       </div>
-      <div class="pt-12 relative">
+      <div class="pt-12 flex">
+        <div class="w-1/2"> <img class="lg:h-[100vh] object-cover w-full" src="/images/abt-1.png" alt="">
+        </div>
+        <div class="w-1/2 lg:ml-3 ml-1">
+          <img class="lg:mb-3 mb-1 lg:h-[49vh] object-cover w-full " src="/images/abt-2.png" alt="">
+          <img class=" lg:h-[49vh] object-cover w-full" src="/images/abt-3.png" alt="">
+        </div>
         <!-- <img src="/images/quality-seal.png" class="absolute lg:w-auto w-20 lg:top-10 top-14 left-0 right-0 mx-auto"
           alt=""> -->
-        <img src="/images/product-chair.png" class="lg:h-auto h-[209px] object-cover" alt="">
+        <!-- <img src="/images/product-chair.png" class="lg:h-auto h-[209px] object-cover" alt=""> -->
       </div>
 
       <div class="pt-6">
@@ -114,7 +133,7 @@ export default defineComponent({
       </div>
       <div class="pt-6">
         <div class="mt-8">
-          <div class="border-b lg:py-6 my-6 vorder-[#7D7D7D]">
+          <div class="border-b lg:py-6 text-center my-6 vorder-[#7D7D7D]">
             <p class="lg:text-4xl font-semibold text-3xl lg:mb-0 mb-4">Brand Partners</p>
           </div>
           <div class="flex justify-between flex-wrap">
