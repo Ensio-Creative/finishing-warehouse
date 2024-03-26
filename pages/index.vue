@@ -39,15 +39,15 @@ export default defineComponent({
   <div>
     <div class="relative">
       <Carousel ref="myCarousel" :autoplay="6000" :wrap-around="true" :transition="600">
-        <slide v-for="slide in 3" :key="slide">
+        <slide v-for="slide in 6" :key="slide">
           <div class="">
             <img class="w-screen object-cover lg:h-[100vh] h-[90vh]" :src="'/images/hero/slide-' + slide + '.png'"
               alt="">
           </div>
         </slide>
       </Carousel>
-      <div class="bg-gradient-to-t from-[#FFFFFF00] from-40% to-[#FFFFFF] absolute top-0 w-full lg:h-[100vh] h-[90vh] ">
-      </div>
+      <!-- <div class="bg-gradient-to-t from-[#FFFFFF00] from-40% to-[#FFFFFF] absolute top-0 w-full lg:h-[100vh] h-[90vh] ">
+      </div> -->
       <div class="absolute lg:top-72 top-52 left-0 right-0 text-center">
         <p class="text-5xl text-white font-bold">Embrace the power of <br>
           quality and aesthetics</p>
@@ -96,10 +96,10 @@ export default defineComponent({
           </NuxtLink>
         </div>
       </div>
-      <div class="text-center">
+      <div class="text-center my-6">
         <NuxtLink to="/products">
           <button
-            class="border border-[#84240C] text-sm text-[#84240C] lg:w-52 w-full font-semibold p-2 my-auto">DISCOVER
+            class="border border-[#84240C] text-sm text-[#84240C] lg:w-72 w-full font-semibold p-2 my-auto">DISCOVER
             MORE</button>
         </NuxtLink>
       </div>

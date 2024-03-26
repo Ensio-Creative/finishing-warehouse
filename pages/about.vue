@@ -5,7 +5,7 @@
   </Head>
   <div class="">
     <HeroComp img="about" />
-    <div class="lg:flex lg:px-20 px-4 py-12">
+    <div class="lg:flex lg:px-20 px-4 lg:py-20 py-12">
       <div class="lg:w-[40%] lg:mr-10">
         <p class="lg:text-4xl text-3xl font-semibold mb-6">About us</p>
         <p class="text-lg">A perfect blend of glamour and functionality of a building or space is reflected through the
@@ -20,7 +20,7 @@
           We are dedicated to creating visually appealing environment that facilitates comfort.
         </p>
       </div>
-      <div class="w-[60%]">
+      <div class="lg:w-[60%] lg:mt-0 mt-6">
         <img class="w-full lg:mt-0 mt-4" src="/images/about.png" alt="">
       </div>
     </div>
