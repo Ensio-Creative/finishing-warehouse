@@ -41,7 +41,7 @@ export default defineComponent({
       <Carousel ref="myCarousel" :autoplay="6000" :wrap-around="true" :transition="600">
         <slide v-for="slide in 6" :key="slide">
           <div class="">
-            <img class="w-screen object-cover lg:h-[100vh] h-[90vh]" :src="'/images/hero/slide-' + slide + '.png'"
+            <img class="w-screen object-cover lg:h-[90vh] h-[80vh]" :src="'/images/hero/slide-' + slide + '.png'"
               alt="">
           </div>
         </slide>
@@ -98,17 +98,18 @@ export default defineComponent({
       </div>
       <div class="text-center my-6">
         <NuxtLink to="/products">
-          <button
-            class="border border-[#84240C] text-sm text-[#84240C] lg:w-72 w-full font-semibold p-2 my-auto">DISCOVER
-            MORE</button>
+          <button class="text-lg flex justify-between mx-auto text-[#84240C] lg:w-60 w-full font-semibold p-2 my-auto">DISCOVER
+            MORE
+            <img class="my-auto"src="/images/arrow.svg" alt="">
+          </button>
         </NuxtLink>
       </div>
-      <div class="pt-12 flex">
-        <div class="w-1/2"> <img class="lg:h-[100vh] object-cover w-full" src="/images/abt-1.png" alt="">
+      <div class="pt-12 lg:flex">
+        <div class="lg:w-1/2 lg:mb-0 mb-4"> <img class="lg:h-[100vh] object-cover w-full" src="/images/abt-1.png" alt="">
         </div>
-        <div class="w-1/2 lg:ml-3 ml-1">
-          <img class="lg:mb-3 mb-1 lg:h-[49vh] object-cover w-full " src="/images/abt-2.png" alt="">
-          <img class=" lg:h-[49vh] object-cover w-full" src="/images/abt-3.png" alt="">
+        <div class="lg:w-1/2 lg:ml-3">
+          <img class="lg:mb-3 mb-4 lg:h-[49vh] object-cover w-full " src="/images/abt-3.png" alt="">
+          <img class=" lg:h-[49vh] object-cover w-full" src="/images/abt-2.png" alt="">
         </div>
         <!-- <img src="/images/quality-seal.png" class="absolute lg:w-auto w-20 lg:top-10 top-14 left-0 right-0 mx-auto"
           alt=""> -->

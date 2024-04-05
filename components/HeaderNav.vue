@@ -17,7 +17,7 @@ const setToggle = () => {
 
 <template>
   <div
-    class="fixed z-30 top-0 w-full bg-[#FFFFFFCC] flex justify-between lg:px-20 px-4 py-5">
+    class="w-full bg-[#FFFFFF] flex justify-between lg:px-20 px-4 py-5">
     <NuxtLink @click="dropdown = false" to="/" class="z-30">
       <img class="lg:w-auto w-[140px] my-auto" src="/images/logo.png" />
     </NuxtLink>
