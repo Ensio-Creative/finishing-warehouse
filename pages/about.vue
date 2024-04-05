@@ -21,7 +21,7 @@
         </p>
       </div>
       <div class="lg:w-[40%] lg:mt-0 mt-6 lg:flex">
-        <img class="w-full lg:mt-0 mt-4" src="/images/about.png" alt="">
+        <img class="w-full lg:h-auto h-[65vh] object-cover lg:mt-0 mt-4" src="/images/about.png" alt="">
         <img class="w-full lg:ml-2 lg:mt-0 mt-4" src="/images/about-1.png" alt="">
       </div>
     </div>

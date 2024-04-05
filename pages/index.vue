@@ -37,18 +37,18 @@ export default defineComponent({
     <Title>Finishing Warehouse - </Title>
   </Head>
   <div>
-    <div class="relative">
+    <div class="relative mt-20">
       <Carousel ref="myCarousel" :autoplay="6000" :wrap-around="true" :transition="600">
         <slide v-for="slide in 6" :key="slide">
           <div class="">
-            <img class="w-screen object-cover lg:h-[90vh] h-[80vh]" :src="'/images/hero/slide-' + slide + '.png'"
+            <img class="w-screen object-cover lg:h-[90vh] h-[70vh]" :src="'/images/hero/slide-' + slide + '.png'"
               alt="">
           </div>
         </slide>
       </Carousel>
       <!-- <div class="bg-gradient-to-t from-[#FFFFFF00] from-40% to-[#FFFFFF] absolute top-0 w-full lg:h-[100vh] h-[90vh] ">
       </div> -->
-      <div class="absolute lg:top-72 top-52 left-0 right-0 text-center">
+      <div class="absolute lg:top-72 top-44 left-0 right-0 text-center">
         <p class="text-5xl text-white font-bold">Embrace the power of <br>
           quality and aesthetics</p>
       </div>
@@ -98,7 +98,7 @@ export default defineComponent({
       </div>
       <div class="text-center my-6">
         <NuxtLink to="/products">
-          <button class="text-lg flex justify-between mx-auto text-[#84240C] lg:w-60 w-full font-semibold p-2 my-auto">DISCOVER
+          <button class="text-lg flex justify-between mx-auto text-[#84240C] lg:w-60 w-[70%] font-semibold p-2 my-auto">DISCOVER
             MORE
             <img class="my-auto"src="/images/arrow.svg" alt="">
           </button>

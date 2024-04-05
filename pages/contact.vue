@@ -27,7 +27,7 @@
         </div>
       </div> -->
       <div class="lg:flex justify-between lg:py-16 py-10 lg:mb-10 ">
-        <div class="bg-[#84240C] p-6 text-white rounded-xl lg:w-[26%]">
+        <div class="bg-[#84240C] p-6 text-white rounded-xl lg:w-[28%]">
           <div class="mb-8">
             <p class="font-bold text-lg mb-2">Office Address</p>
             <p>Suite D28, Efab Mall, Garki, Area 11, FCT, Abuja</p>
@@ -45,7 +45,7 @@
             <p>+234 905 276 6460</p>
           </div>
         </div>
-        <div class="lg:w-[70%]">
+        <div class="lg:w-[70%] bg-[#FAFAFA] lg:p-8 p-4 lg:mt-0 mt-4 rounded-xl">
           <div class="lg:flex lg:my-6 justify-between">
             <div class="lg:w-[48%]">
               <input type="text" placeholder="First Name*"
