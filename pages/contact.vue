@@ -45,7 +45,7 @@
             <p>+234 905 276 6460</p>
           </div>
         </div>
-        <div class="lg:w-[70%] bg-[#FAFAFA] lg:p-8 p-4 lg:mt-0 mt-4 rounded-xl">
+        <div class="lg:w-[70%] bg-[#FAFAFA] lg:p-10 p-4 lg:mt-0 mt-4 rounded-xl">
           <div class="lg:flex lg:my-6 justify-between">
             <div class="lg:w-[48%]">
               <input type="text" placeholder="First Name*"

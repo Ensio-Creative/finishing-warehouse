@@ -16,8 +16,7 @@ const setToggle = () => {
 </script>
 
 <template>
-  <div
-    class="w-full fixed top-0 z-30 bg-[#FFFFFF] flex justify-between lg:px-20 px-4 py-5">
+  <div class="w-full fixed top-0 z-30 bg-[#FFFFFF] flex justify-between lg:px-20 px-4 py-5">
     <NuxtLink @click="dropdown = false" to="/" class="z-30">
       <img class="lg:w-auto w-[140px] my-auto" src="/images/logo.png" />
     </NuxtLink>
@@ -26,12 +25,12 @@ const setToggle = () => {
       <NuxtLink to="/">
         <p>Home</p>
       </NuxtLink>
-      <p class="flex cursor-pointer">
-        <NuxtLink to="/products">
-          Products
-        </NuxtLink>
-        <img v-if="dropdown" @click="dropdown = !dropdown" class="my-auto ml-2" src="/images/icons/more.svg" alt="">
-        <img v-else @click="dropdown = !dropdown" class="my-auto rotate-180 ml-2" src="/images/icons/more.svg" alt="">
+      <p @click="dropdown = !dropdown" class="flex cursor-pointer">
+        <!-- <NuxtLink to="/products"> -->
+        Products
+        <!-- </NuxtLink> -->
+        <img v-if="dropdown" class="my-auto ml-2" src="/images/icons/more.svg" alt="">
+        <img v-else class="my-auto rotate-180 ml-2" src="/images/icons/more.svg" alt="">
       </p>
       <NuxtLink to="/projects">
         <p>Projects</p>
