@@ -26,9 +26,9 @@ const products = ref([
     <Title>{{ products[$route.params.slug].title }} - Finishing Warehouse </Title>
   </Head>
   <div>
-    <HeroComp :img="$route.params.slug" />
+    <HeroComp :img="$route.params.slug" :text="products[$route.params.slug].title"/>
     <div class="lg:px-20 py-10 px-4">
-      <p class="lg:text-4xl mb-6 font-semibold text-3xl">{{ products[$route.params.slug].title }}</p>
+      <!-- <p class="lg:text-4xl mb-6 font-semibold text-3xl">{{ products[$route.params.slug].title }}</p> -->
       <div class="flex flex-wrap justify-between">
         <div class="mb-3 lg:w-[33%]" v-for="slide in 6" :key="slide">
           <img :src="'/images/products/1/img' + slide + '.png'" alt="">

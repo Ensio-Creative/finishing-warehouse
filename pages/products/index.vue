@@ -16,10 +16,10 @@ const slider = ref([
   <Head>
     <Title>Products - Finishing Warehouse </Title>
   </Head>
-  <div>
-    <HeroComp img="products" />
+  <div> 
+    <HeroComp img="products" text="Product Categories" />
     <div class="lg:px-20 px-4 py-10">
-      <p class="lg:text-4xl text-3xl font-semibold">Product Categories</p>
+      <!-- <p class="lg:text-4xl text-3xl font-semibold">Product Categories</p> -->
       <!-- <p>Explore our product categories.</p> -->
 
 

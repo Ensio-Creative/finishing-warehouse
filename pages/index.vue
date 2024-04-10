@@ -46,8 +46,9 @@ export default defineComponent({
           </div>
         </slide>
       </Carousel>
-      <!-- <div class="bg-gradient-to-t from-[#FFFFFF00] from-40% to-[#FFFFFF] absolute top-0 w-full lg:h-[100vh] h-[90vh] ">
-      </div> -->
+     <div class="bg-[#0F0F0F33] absolute top-0 w-full lg:h-[90vh] h-[70vh] ">
+      </div> 
+
       <div class="absolute lg:top-72 top-44 left-0 right-0 text-center">
         <p class="text-5xl text-white font-bold">Embrace the power of <br>
           quality and aesthetics</p>
@@ -65,7 +66,7 @@ export default defineComponent({
     </div>
     <div class="lg:px-20 px-4 py-10">
       <div class="flex justify-between">
-        <p class="lg:text-4xl font-semibold text-3xl">Products Categories</p>
+        <p class="lg:text-4xl font-medium text-3xl">Explore Products</p>
       </div>
       <div class="lg:flex justify-between my-4">
         <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
@@ -118,7 +119,7 @@ export default defineComponent({
 
       <div class="pt-6">
         <div class="flex my-8 justify-between">
-          <p class="lg:text-4xl font-semibold text-3xl">Projects</p>
+          <p class="lg:text-4xl font-medium text-3xl">Projects</p>
           <div class="flex lg:w-28 w- justify-between">
             <img @click="myCarousel.prev()" class="w-12 cursor-pointer" src="/images/prev.svg" alt="">
             <img @click="myCarousel.next()" class="w-12 lg:ml-0 ml-2 cursor-pointer" src="/images/next.svg" alt="">
@@ -135,7 +136,7 @@ export default defineComponent({
       <div class="pt-6">
         <div class="mt-8">
           <div class="border-b lg:py-6 text-center my-6 vorder-[#7D7D7D]">
-            <p class="lg:text-4xl font-semibold text-3xl lg:mb-0 mb-4">Brand Partners</p>
+            <p class="lg:text-4xl font-medium text-3xl lg:mb-0 mb-4">Brand Partners</p>
           </div>
           <div class="flex justify-between flex-wrap">
             <div class="mb-3 lg:w-[15%] w-[48%]" v-for="index in 6" :key="index">
