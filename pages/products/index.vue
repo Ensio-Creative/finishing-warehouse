@@ -25,7 +25,7 @@ const slider = ref([
 
       <div v-for="slide in 8" :key="slide" class="my-6 relative">
         <NuxtLink :to="'/products/' + slide">
-          <img class=" lg:h-auto h-72" :src="'/images/products/product' + slide + '.png'" alt="">
+          <img class=" lg:h-auto h-44" :src="'/images/products/product' + slide + '.png'" alt="">
           <p class="absolute bottom-6 lg:left-10 left-4 lg:text-4xl text-2xl text-white">{{ slider[slide] }}</p>
         </NuxtLink>
       </div>
