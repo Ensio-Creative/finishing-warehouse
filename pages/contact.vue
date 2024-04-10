@@ -6,7 +6,7 @@
   <div>
     <HeroComp img="contact" text="Contact" />
     <div class="lg:px-24 px-4 py-12">
-      <p class="lg:text-4xl text-3xl font-semibold">Get in touch</p>
+      <p class="lg:text-4xl text-2xl font-semibold">Get in touch</p>
       <p class="lg:w-[40%] mt-3">For enquiry, quotation, or feedback, get in touch with us and we will be glad to hear
         from
         and respond as soon as
