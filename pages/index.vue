@@ -41,16 +41,16 @@ export default defineComponent({
       <Carousel ref="myCarousel" :autoplay="6000" :wrap-around="true" :transition="600">
         <slide v-for="slide in 6" :key="slide">
           <div class="">
-            <img class="w-screen object-cover lg:h-[90vh] h-[70vh]" :src="'/images/hero/slide-' + slide + '.png'"
+            <img class="w-screen object-cover lg:h-[90vh] h-[40vh]" :src="'/images/hero/slide-' + slide + '.png'"
               alt="">
           </div>
         </slide>
       </Carousel>
-     <div class="bg-[#0F0F0F33] absolute top-0 w-full lg:h-[90vh] h-[70vh] ">
+     <div class="bg-[#0F0F0F33] absolute top-0 w-full lg:h-[90vh] h-[40vh] ">
       </div> 
 
-      <div class="absolute lg:top-72 top-44 left-0 right-0 text-center">
-        <p class="text-5xl text-white font-bold">Embrace the power of <br>
+      <div class="absolute lg:top-72 top-28 left-0 right-0 text-center">
+        <p class="lg:text-5xl text-3xl text-white font-bold">Embrace the power of <br>
           quality and aesthetics</p>
       </div>
     </div>

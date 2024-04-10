@@ -7,7 +7,8 @@
     <HeroComp img="about" text="About us" />
     <div class="lg:flex lg:px-20 px-4 lg:py-20 py-12">
       <div class="lg:w-[40%] lg:mr-10">
-        <!-- <p class="lg:text-4xl text-3xl font-semibold mb-6">About us</p> -->
+
+        <p class="lg:text-4xl text-3xl font-semibold mb-6">Who we are</p>
         <p class="text-lg">A perfect blend of glamour and functionality of a building or space is reflected through the
           interior and
           exterior finishing.
