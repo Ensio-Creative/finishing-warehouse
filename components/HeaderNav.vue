@@ -23,7 +23,7 @@ const setToggle = () => {
     <img @click="toggle = !toggle" class="lg:hidden block cursor-pointer" src="/images/icons/bars.svg" alt="">
     <div class="w-[40%] z-10 uppercase lg:flex hidden justify-between my-auto text-sm">
       <NuxtLink to="/">
-        <p>Home</p>
+        <p @click="dropdown = false">Home</p>
       </NuxtLink>
       <p @click="dropdown = !dropdown" class="flex cursor-pointer">
         <!-- <NuxtLink to="/products"> -->
@@ -33,13 +33,13 @@ const setToggle = () => {
         <img v-else class="my-auto rotate-180 ml-2" src="/images/icons/more.svg" alt="">
       </p>
       <NuxtLink to="/projects">
-        <p>Projects</p>
+        <p @click="dropdown = false">Projects</p>
       </NuxtLink>
       <NuxtLink to="/about">
-        <p>About us</p>
+        <p @click="dropdown = false">About us</p>
       </NuxtLink>
       <NuxtLink to="/contact">
-        <p>Contact</p>
+        <p @click="dropdown = false">Contact</p>
       </NuxtLink>
     </div>
     <div v-show="dropdown" class="w-full bg-white absolute top-0 left-0 h-screen">

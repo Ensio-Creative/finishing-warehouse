@@ -6,11 +6,10 @@
   <div>
     <HeroComp img="contact" text="Contact" />
     <div class="lg:px-24 px-4 py-12">
-      <p class="lg:text-4xl text-2xl font-semibold">Get in touch</p>
-      <p class="lg:w-[40%] mt-3">For enquiry, quotation, or feedback, get in touch with us and we will be glad to hear
-        from
-        and respond as soon as
-        we can.</p>
+      <p class="lg:text-[40px] text-2xl font-semibold">Get in touch</p>
+      <p class="lg:w-[35%] text-sm mt-3">Ready to take the next step? Contact us today to learn more about our products and
+        services or to schedule a consultation with one of our experts. We look forward to helping you transform your
+        house into the home of your dreams.</p>
       <!-- <div class="lg:flex justify-between my-10">
         <div class="border lg:my-0 my-3 lg:w-[32%] border-[#CBCBCB] p-6 h-52">
           <img src="/images/icons/img-1.png" class="w-10" alt="">

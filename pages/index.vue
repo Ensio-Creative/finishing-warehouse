@@ -46,27 +46,41 @@ export default defineComponent({
           </div>
         </slide>
       </Carousel>
-     <div class="bg-[#0F0F0F33] absolute top-0 w-full lg:h-[90vh] h-[40vh] ">
-      </div> 
+      <div class="bg-[#0F0F0F33] absolute top-0 w-full lg:h-[90vh] h-[40vh] ">
+      </div>
 
-      <div class="absolute lg:top-72 top-28 left-0 right-0 text-center">
-        <p class="lg:text-5xl text-3xl text-white font-bold">Embrace the power of <br>
-          quality and aesthetics</p>
+      <div class="absolute lg:top-60 top-28 left-0 right-0 text-center">
+        <p class="lg:text-5xl text-3xl text-white font-bold">Home for innovative and <br>
+          eco-friendly bathroom <br>
+          solutions</p>
       </div>
     </div>
     <!-- <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
       <source src="/images/hero-vid.mp4" type="video/mp4">
     </video> -->
-    <div class="bg-[#F6F6F6] lg:h-[400px] lg:py-32 px-6 py-16">
-      <p class="lg:text-4xl text-xl lg:w-[60%] mx-auto text-center">Discover the perfect blend of glamour and quality
-        with
-        endless rides
-        of appealing experiences for your building
-        and spaces.</p>
+    <div class="bg-[#F6F6F6] lg:py-32 px-6 py-16">
+      <div class="lg:w-[70%] mx-auto text-center">
+        <p class="lg:text-4xl mb-4 text-xl ">About Finishing Warehouse</p>
+        <p class="text-[18px]">At Finishing Warehouse, we are committed to providing sustainable housing finishing
+          solutions that not only
+          enhance your space but also minimize our environmental footprint. From exquisite bathroom solutions to stylish
+          kitchen fittings, ambient lighting, and elegant wall finishings, we offer eco-friendly materials and
+          energy-efficient lighting products and services that prioritize sustainability without compromising on quality
+          or style.
+          <br> <br>
+          Explore our wide range of products and discover how we can turn your vision into reality. Whether you're
+          renovating your home or undertaking a large-scale construction project, trust Finishing Warehouse to deliver
+          excellence every step of the way.
+        </p>
+        <NuxtLink to="/about">
+          <button class="my-3 text-[#84240C] text-[18px]">LEARN MORE</button>
+        </NuxtLink>
+      </div>
+
     </div>
     <div class="lg:px-20 px-4 py-10">
       <div class="flex justify-between">
-        <p class="lg:text-4xl font-medium text-2xl">Explore Products</p>
+        <p class="lg:text-[40px] font-medium text-2xl">Products Categories</p>
       </div>
       <div class="lg:flex justify-between my-4">
         <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
@@ -99,14 +113,16 @@ export default defineComponent({
       </div>
       <div class="text-center my-6">
         <NuxtLink to="/products">
-          <button class="text-lg flex justify-between mx-auto text-[#84240C] lg:w-60 w-[70%] font-semibold p-2 my-auto">DISCOVER
+          <button
+            class="text-[18px] text-center  mx-auto text-[#84240C] lg:w-60 w-[70%] font-semibold p-2 my-auto">DISCOVER
             MORE
-            <img class="my-auto"src="/images/arrow.svg" alt="">
+            <!-- <img class="my-auto"src="/images/arrow.svg" alt=""> -->
           </button>
         </NuxtLink>
       </div>
       <div class="pt-12 lg:flex">
-        <div class="lg:w-1/2 lg:mb-0 mb-4"> <img class="lg:h-[100vh] object-cover w-full" src="/images/abt-1.png" alt="">
+        <div class="lg:w-1/2 lg:mb-0 mb-4"> <img class="lg:h-[100vh] object-cover w-full" src="/images/abt-1.png"
+            alt="">
         </div>
         <div class="lg:w-1/2 lg:ml-3">
           <img class="lg:mb-3 mb-4 lg:h-[49vh] object-cover w-full " src="/images/abt-3.png" alt="">
@@ -119,7 +135,7 @@ export default defineComponent({
 
       <div class="pt-6">
         <div class="flex my-8 justify-between">
-          <p class="lg:text-4xl font-medium text-2xl">Projects</p>
+          <p class="lg:text-[40px] font-medium text-2xl">Projects</p>
           <div class="flex lg:w-28 w- justify-between">
             <img @click="myCarousel.prev()" class="w-12 cursor-pointer" src="/images/prev.svg" alt="">
             <img @click="myCarousel.next()" class="w-12 lg:ml-0 ml-2 cursor-pointer" src="/images/next.svg" alt="">
@@ -136,10 +152,10 @@ export default defineComponent({
       <div class="pt-6">
         <div class="mt-8">
           <div class="border-b lg:py-6 text-center my-6 vorder-[#7D7D7D]">
-            <p class="lg:text-4xl font-medium text-2xl lg:mb-0 mb-4">Brand Partners</p>
+            <p class="lg:text-[40px] font-medium text-2xl lg:mb-0 mb-4">Brand Partners</p>
           </div>
           <div class="flex justify-between flex-wrap">
-            <div class="mb-3 lg:w-[15%] w-[48%]" v-for="index in 6" :key="index">
+            <div class="mb-3 lg:w-[13%] w-[48%]" v-for="index in 7" :key="index">
               <img class="" :src="'/images/brands/00' + index + '.png'" alt="">
             </div>
           </div>
