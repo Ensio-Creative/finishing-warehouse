@@ -93,22 +93,22 @@ export default defineComponent({
           </NuxtLink>
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
-          <NuxtLink to="/products/2">
-            <img class="w-full" src="/images/categories/002.png" alt="">
-            <div class="bg-[#0F0F0F] flex justify-between p-5">
-              <p class=" lg:text-[25px] text-2xl  text-white ">Wall Finish</p>
-              <img src="/images/icons/arrow-1.svg" alt="">
-            </div>
-          </NuxtLink>
+          <!-- <NuxtLink to="/products/2"> -->
+          <img class="w-full" src="/images/categories/002.png" alt="">
+          <div class="bg-[#0F0F0F] flex justify-between p-5">
+            <p class=" lg:text-[25px] text-2xl  text-white ">Wall Finish</p>
+            <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
+          </div>
+          <!-- </NuxtLink> -->
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
-          <NuxtLink to="/products/3">
-            <img class="w-full" src="/images/categories/003.png" alt="">
-            <div class="bg-[#0F0F0F] flex justify-between p-5">
-              <p class=" lg:text-[25px] text-2xl text-white ">Kitchen Finish</p>
-              <img src="/images/icons/arrow-1.svg" alt="">
-            </div>
-          </NuxtLink>
+          <!-- <NuxtLink to="/products/3"> -->
+          <img class="w-full" src="/images/categories/003.png" alt="">
+          <div class="bg-[#0F0F0F] flex justify-between p-5">
+            <p class=" lg:text-[25px] text-2xl text-white ">Kitchen Finish</p>
+            <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
+          </div>
+          <!-- </NuxtLink> -->
         </div>
       </div>
       <div class="text-center my-3">
@@ -160,7 +160,8 @@ export default defineComponent({
             </div>
           </div>
           <div class="lg:hidden block">
-            <Carousel snap-align="start" pause-autoplay-on-hover="true" items-to-show="2" transition="300" :items-to-scroll="2" wrap-around="true" autoplay="1">
+            <Carousel snap-align="start" pause-autoplay-on-hover="true" items-to-show="2" transition="300"
+              :items-to-scroll="2" wrap-around="true" autoplay="1">
               <slide v-for="index in 7" :key="slide">
                 <div>
                   <img class="" :src="'/images/brands/00' + index + '.png'" alt="">

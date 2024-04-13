@@ -44,13 +44,14 @@ const slider = ref([
 
 
       <div v-for="slide in 7" :key="slide" class="my-6 relative">
-        <NuxtLink :to="'/products/' + slide">
-          <img class=" lg:h-auto h-52 object-cover" :src="'/images/products/product' + slide + '.png'" alt="">
-          <div class="lg:absolute bottom-0 lg:p-10 p-6 left-0 bg-[#0F0F0F] lg:w-[50%]">
-            <p class=" lg:text-[35px] text-2xl my-2 text-white">{{ slider[slide - 1].title }}</p>
-            <p class="text-white">{{ slider[slide - 1].des }}</p>
-          </div>
-        </NuxtLink>
+        <img class=" lg:h-auto h-52 object-cover" :src="'/images/products/product' + slide + '.png'" alt="">
+        <div class="lg:absolute bottom-0 lg:p-10 p-6 left-0 bg-[#0F0F0F] lg:w-[50%]">
+          <p class=" lg:text-[35px] text-2xl my-2 text-white">{{ slider[slide - 1].title }}</p>
+          <p class="text-white">{{ slider[slide - 1].des }}</p>
+          <NuxtLink v-if="slide === 1" :to="'/products/' + slide">
+            <p class="text-white mt-2">VIEW PRODUCTS</p>
+          </NuxtLink>
+        </div>
       </div>
       <!-- <div class="my-6 relative">
         <img class=" lg:h-auto h-72" src="/images/products/product2.png" alt="">

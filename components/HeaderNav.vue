@@ -25,12 +25,12 @@ const setToggle = () => {
       <NuxtLink to="/">
         <p @click="dropdown = false">Home</p>
       </NuxtLink>
-      <p @click="dropdown = !dropdown" class="flex cursor-pointer">
-        <!-- <NuxtLink to="/products"> -->
-        Products
-        <!-- </NuxtLink> -->
-        <img v-if="dropdown" class="my-auto ml-2" src="/images/icons/more.svg" alt="">
-        <img v-else class="my-auto rotate-180 ml-2" src="/images/icons/more.svg" alt="">
+      <p class="flex cursor-pointer">
+        <NuxtLink to="/products">
+          Products
+        </NuxtLink>
+        <!-- <img v-if="dropdown" class="my-auto ml-2" src="/images/icons/more.svg" alt="">
+        <img v-else class="my-auto rotate-180 ml-2" src="/images/icons/more.svg" alt=""> -->
       </p>
       <NuxtLink to="/projects">
         <p @click="dropdown = false">Projects</p>

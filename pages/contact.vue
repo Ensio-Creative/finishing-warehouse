@@ -27,10 +27,10 @@
       </div> -->
       <div class="lg:flex justify-between lg:py-16 py-10 lg:mb-10 ">
         <div class="bg-[#84240C] pt-10 p-6 text-white rounded-xl lg:w-[28%]">
-          <div class="mb-8">
+          <!-- <div class="mb-8">
             <p class="font-medium text-lg mb-2">Office Address</p>
             <p class="font-thin">Suite D28, Efab Mall, Garki, Area 11, FCT, Abuja</p>
-          </div>
+          </div> -->
           <div class="mb-8">
             <p class="font-medium text-lg mb-2">Abuja Showroom Address</p>
             <p class="font-thin">Our showroom is located on the Second Floor, Machina Plaza, Mambolo Street, Abuja</p>
