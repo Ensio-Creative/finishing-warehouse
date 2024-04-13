@@ -49,7 +49,9 @@ const slider = ref([
           <p class=" lg:text-[35px] text-2xl my-2 text-white">{{ slider[slide - 1].title }}</p>
           <p class="text-white">{{ slider[slide - 1].des }}</p>
           <NuxtLink v-if="slide === 1" :to="'/products/' + slide">
-            <p class="text-white mt-2">VIEW PRODUCTS</p>
+            <p class="text-white flex text-sm mt-2 font-medium">VIEW PRODUCTS
+              <img src="/images/icons/arrow-1.svg" class="w-4 ml-2"alt="">
+            </p>
           </NuxtLink>
         </div>
       </div>

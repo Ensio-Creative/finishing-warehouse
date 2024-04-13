@@ -115,13 +115,13 @@ const setToggle = () => {
         <NuxtLink to="/products" @click="toggle = !toggle">
           <p class="text-3xl ">Products</p>
         </NuxtLink>
-        <img v-if="products === false" @click="products = !products" class="w-6 cursor-pointer"
+        <!-- <img v-if="products === false" @click="products = !products" class="w-6 cursor-pointer"
           src="/images/icons/plus.svg" alt="">
         <img v-else class="w-6 cursor-pointer" @click="products = !products" src="/images/icons/hide.svg" alt="">
 
         <div class="w-full" v-show="products">
           <MobileProducts :toggle="setToggle" />
-        </div>
+        </div> -->
       </div>
       <div class="border-b my-4 border-[#D9D9D9]">
         <NuxtLink to="/projects" @click="toggle = !toggle">
