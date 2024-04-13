@@ -38,17 +38,17 @@ const slider = ref([
   </Head>
   <div>
     <HeroComp img="products" text="Product Categories" />
-    <div class="lg:px-20 px-4 py-10">
+    <div class="lg:px-20 px-4 lg:py-20 py-8">
       <!-- <p class="lg:text-4xl text-3xl font-semibold">Product Categories</p> -->
       <!-- <p>Explore our product categories.</p> -->
 
 
       <div v-for="slide in 7" :key="slide" class="my-6 relative">
         <NuxtLink :to="'/products/' + slide">
-          <img class=" lg:h-auto " :src="'/images/products/product' + slide + '.png'" alt="">
+          <img class=" lg:h-auto h-52 object-cover" :src="'/images/products/product' + slide + '.png'" alt="">
           <div class="lg:absolute bottom-0 lg:p-10 p-6 left-0 bg-[#0F0F0F] lg:w-[50%]">
-            <p class=" lg:text-3xl text-2xl my-1 text-white">{{ slider[slide - 1].title }}</p>
-            <p class="text-white text-sm">{{ slider[slide - 1].des }}</p>
+            <p class=" lg:text-[35px] text-2xl my-2 text-white">{{ slider[slide - 1].title }}</p>
+            <p class="text-white">{{ slider[slide - 1].des }}</p>
           </div>
         </NuxtLink>
       </div>

@@ -10,7 +10,6 @@ export default {
         "Bathroom Finish",
         "Wall Finish",
         "Kitchen Finish",
-        "Indoor Finish",
         "Outdoor Finish",
         "Home Decor",
         "Lighting ",

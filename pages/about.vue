@@ -7,9 +7,8 @@
     <HeroComp img="about" text="About us" />
     <div class="lg:flex lg:px-20 px-4 lg:py-20 py-12">
       <div class="lg:w-[40%] lg:mr-10">
-
-        <p class="lg:text-[40px] text-2xl font-semibold mb-6">Who we are</p>
-        <p class="text-[18px]">Finishing Warehouse Nigeria Limited is dedicated to promoting sustainability and
+        <p class="lg:text-[35px] text-2xl font-medium mb-4">Who we are</p>
+        <p class="">Finishing Warehouse Nigeria Limited is dedicated to promoting sustainability and
           environmental responsibility in the housing finishing industry. As a leading distributor based in Abuja,
           Nigeria, we strive to lead by example by offering a wide selection of eco-friendly products and implementing
           sustainable practices throughout our operations.

@@ -21,7 +21,7 @@ const setToggle = () => {
       <img class="lg:w-auto w-[140px] my-auto" src="/images/logo.png" />
     </NuxtLink>
     <img @click="toggle = !toggle" class="lg:hidden block cursor-pointer" src="/images/icons/bars.svg" alt="">
-    <div class="w-[40%] z-10 uppercase lg:flex hidden justify-between my-auto text-sm">
+    <div class="w-[40%] z-10 uppercase lg:flex hidden justify-between my-auto font-medium text-[12px]">
       <NuxtLink to="/">
         <p @click="dropdown = false">Home</p>
       </NuxtLink>
@@ -43,7 +43,7 @@ const setToggle = () => {
       </NuxtLink>
     </div>
     <div v-show="dropdown" class="w-full bg-white absolute top-0 left-0 h-screen">
-      <div class="flex px-20 py-32">
+      <div class="flex justify-center px-20 py-32">
         <div class="w-[12.5%] relative">
           <NuxtLink to="/products/1" @click="dropdown = !dropdown">
             <img src="/images/products/1.png" class="object-cover w-full h-80" alt="">
@@ -65,29 +65,29 @@ const setToggle = () => {
             <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
         </div>
-        <div class="w-[12.5%] relative">
+        <!-- <div class="w-[12.5%] relative">
           <NuxtLink to="/products/4" @click="dropdown = !dropdown">
             <img src="/images/products/4.png" class="object-cover w-full h-80" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-10">Indoor Finish</div>
             <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
-        </div>
+        </div> -->
         <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/5" @click="dropdown = !dropdown">
+          <NuxtLink to="/products/4" @click="dropdown = !dropdown">
             <img src="/images/products/5.png" class="object-cover h-80 w-full" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-20 -right-12">Outdoor Finish</div>
             <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
         </div>
         <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/6" @click="dropdown = !dropdown">
+          <NuxtLink to="/products/5" @click="dropdown = !dropdown">
             <img src="/images/products/6.png" class="object-cover h-80 w-full" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div>
             <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
           </NuxtLink>
         </div>
         <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/7" @click="dropdown = !dropdown">
+          <NuxtLink to="/products/6" @click="dropdown = !dropdown">
             <img src="/images/products/7.png" class="object-cover h-80 w-full" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-12 -right-4">Lighting</div>
             <!-- <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div> -->
@@ -95,7 +95,7 @@ const setToggle = () => {
           </NuxtLink>
         </div>
         <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/8" @click="dropdown = !dropdown">
+          <NuxtLink to="/products/7" @click="dropdown = !dropdown">
             <img src="/images/products/8.png" class="object-cover h-80 w-full" alt="">
             <div class="-rotate-90 text-xl absolute text-white bottom-12 -right-4">Curtains</div>
             <!-- <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div> -->
@@ -105,7 +105,7 @@ const setToggle = () => {
       </div>
     </div>
     <div v-if="toggle" class="fixed top-0 left-0 w-full p-6 h-screen bg-white">
-      <img @click="toggle = false" class="ml-auto cursor-pointer" src="/images/icons/close.svg" alt="">
+      <img @click="toggle = false" class="ml-auto -mt-3 cursor-pointer" src="/images/icons/close.svg" alt="">
       <div class="border-b my-4 mt-8  border-[#D9D9D9]">
         <NuxtLink to="/" @click="toggle = !toggle">
           <p class="text-3xl py-3">Home</p>

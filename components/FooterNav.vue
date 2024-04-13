@@ -6,8 +6,8 @@
       <div
         class="absolute  text-center text-white top-20 lg:w-[58%] w-[80%] mx-auto left-0 right-0 lg:px-32 px-10 lg:py-24 py-10 overlay border-[#FFFFFF33]">
         <p class="lg:text-5xl text-xl font-normal">To learn more about our
-          products, pricing or
-          how to place an order.</p>
+          products and services or
+          to place an order.</p>
         <NuxtLink to="/contact">
           <p class="underline mt-6 lg:text-base text-sm">CONTACT US</p>
         </NuxtLink>

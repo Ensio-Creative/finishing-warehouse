@@ -8,8 +8,6 @@ const products = ref([
   }, {
     title: "Kitchen Finish"
   }, {
-    title: "Indoor Finish"
-  }, {
     title: "Outdoor Finish"
   }, {
     title: "Home Decor"
@@ -39,12 +37,12 @@ const product1 = ref([
   </Head>
   <div>
     <HeroComp :img="$route.params.slug" :text="products[$route.params.slug].title" />
-    <div class="lg:px-20 py-10 px-4">
+    <div class="lg:px-20 lg:py-20 py-12 px-4">
       <!-- <p class="lg:text-4xl mb-6 font-semibold text-3xl">{{ products[$route.params.slug].title }}</p> -->
       <div class="flex flex-wrap justify-between">
-        <div class="mb-3 lg:w-[33%]" v-for="slide in 8" :key="slide">
+        <div class="mb-5 lg:w-[33%]" v-for="slide in 8" :key="slide">
           <img :src="'/images/products/2/img' + slide + '.png'" alt="">
-          <p class="p-2 text-center text-lg">{{ product1[slide-1] }}</p>
+          <p class="p-2 text-center text-[16px] font-medium">{{ product1[slide-1] }}</p>
         </div>
         <div class="lg:w-[33%]"></div>
       </div>

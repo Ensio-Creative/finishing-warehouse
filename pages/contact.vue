@@ -6,8 +6,8 @@
   <div>
     <HeroComp img="contact" text="Contact" />
     <div class="lg:px-24 px-4 py-12">
-      <p class="lg:text-[40px] text-2xl font-semibold">Get in touch</p>
-      <p class="lg:w-[35%] text-sm mt-3">Ready to take the next step? Contact us today to learn more about our products and
+      <p class="lg:text-[35px] text-2xl font-medium">Get in touch</p>
+      <p class="lg:w-[45%] mt-3">Ready to take the next step? Contact us today to learn more about our products and
         services or to schedule a consultation with one of our experts. We look forward to helping you transform your
         house into the home of your dreams.</p>
       <!-- <div class="lg:flex justify-between my-10">
@@ -26,7 +26,7 @@
         </div>
       </div> -->
       <div class="lg:flex justify-between lg:py-16 py-10 lg:mb-10 ">
-        <div class="bg-[#84240C] p-6 text-white rounded-xl lg:w-[28%]">
+        <div class="bg-[#84240C] pt-10 p-6 text-white rounded-xl lg:w-[28%]">
           <div class="mb-8">
             <p class="font-medium text-lg mb-2">Office Address</p>
             <p class="font-thin">Suite D28, Efab Mall, Garki, Area 11, FCT, Abuja</p>
@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="lg:w-[70%] bg-[#FAFAFA] lg:p-10 p-4 lg:mt-0 mt-4 rounded-xl">
-          <div class="lg:flex lg:my-6 justify-between">
+          <div class="lg:flex lg:my-4 justify-between">
             <div class="lg:w-[48%]">
               <input type="text" placeholder="First Name*"
                 class="w-full bg-transparent border-b border-[#0F0F0F] p-4 focus:outline-none text-[#0F0F0F] text-sm">
