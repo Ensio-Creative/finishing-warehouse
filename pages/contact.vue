@@ -33,7 +33,7 @@
           </div> -->
           <div class="mb-8">
             <p class="font-medium text-lg mb-2">Abuja Showroom Address</p>
-            <p class="font-thin">Our showroom is located on the Second Floor, Machina Plaza, Mambolo Street, Abuja</p>
+            <p class="font-thin">Our Showroom is located on the second floor, Machima Plaza, Mambolo Street, Abuja</p>
           </div>
           <div class="mb-8">
             <p class="font-medium text-lg mb-2">Email</p>
