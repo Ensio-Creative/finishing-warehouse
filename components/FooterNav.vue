@@ -16,7 +16,10 @@
     <div class="bg-[#000000] lg:px-20 px-4 py-4">
       <div class="flex justify-evenly mb-10 lg:w-[40%] mx-auto">
         <button class="text-[#7D7D7D] border border-[#7D7D7D] p-2 rounded-full lg:px-8 px-4 text-sm">Facebook</button>
-        <button class="text-[#7D7D7D] border border-[#7D7D7D] p-2 rounded-full lg:px-8 px-4 text-sm">Instagram</button>
+        <a href="https://instagram.com/finishingwarehouse" target="_blank">
+          <button
+            class="text-[#7D7D7D] border border-[#7D7D7D] p-2 rounded-full lg:px-8 px-4 text-sm">Instagram</button>
+        </a>
         <button class="text-[#7D7D7D] border border-[#7D7D7D] p-2 rounded-full lg:px-8 px-4 text-sm">X
           (Twitter)</button>
       </div>
