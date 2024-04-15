@@ -21,7 +21,7 @@ const setToggle = () => {
       <img class="lg:w-auto w-[140px] my-auto" src="/images/logo.png" />
     </NuxtLink>
     <img @click="toggle = !toggle" class="lg:hidden block cursor-pointer" src="/images/icons/bars.svg" alt="">
-    <div class="w-[40%] z-10 uppercase lg:flex hidden justify-between my-auto font-medium text-[12px]">
+    <div class="w-[40%] z-10 uppercase text-[#84240C] lg:flex hidden justify-between my-auto font-medium text-[12px]">
       <NuxtLink to="/">
         <p @click="dropdown = false">Home</p>
       </NuxtLink>

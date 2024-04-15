@@ -37,7 +37,7 @@ const slider = ref([
     <Title>Products - Finishing Warehouse </Title>
   </Head>
   <div>
-    <HeroComp img="products" text="Product Categories" />
+    <HeroComp img="products" text="Products" />
     <div class="lg:px-20 px-4 lg:py-20 py-8">
       <!-- <p class="lg:text-4xl text-3xl font-semibold">Product Categories</p> -->
       <!-- <p>Explore our product categories.</p> -->
@@ -45,11 +45,11 @@ const slider = ref([
 
       <div v-for="slide in 7" :key="slide" class="my-6 relative">
         <img class=" lg:h-auto h-52 object-cover" :src="'/images/products/product' + slide + '.png'" alt="">
-        <div class="lg:absolute bottom-0 lg:p-10 p-6 left-0 bg-[#0F0F0F] lg:w-[50%]">
-          <p class=" lg:text-[35px] text-2xl my-2 text-white">{{ slider[slide - 1].title }}</p>
-          <p class="text-white">{{ slider[slide - 1].des }}</p>
+        <div class="lg:absolute bottom-0 lg:p-10 p-6 left-0 bg-[#FFE7BF] text-[#84240C] lg:w-[50%]">
+          <p class=" lg:text-[35px] text-2xl my-2">{{ slider[slide - 1].title }}</p>
+          <p class="">{{ slider[slide - 1].des }}</p>
           <NuxtLink v-if="slide === 1" :to="'/products/' + slide">
-            <p class="text-white flex text-sm mt-5 font-medium">VIEW PRODUCTS
+            <p class=" flex text-sm mt-5 font-medium">VIEW PRODUCTS
               <img src="/images/icons/arrow-1.svg" class="w-4 ml-2"alt="">
             </p>
           </NuxtLink>

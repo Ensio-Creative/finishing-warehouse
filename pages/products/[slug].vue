@@ -42,7 +42,7 @@ const product1 = ref([
       <div class="flex flex-wrap justify-between">
         <div class="mb-5 lg:w-[33%]" v-for="slide in 8" :key="slide">
           <img :src="'/images/products/2/img' + slide + '.png'" alt="">
-          <p class="p-2 text-center text-[16px] font-medium">{{ product1[slide-1] }}</p>
+          <p class="p-2 text-center text-[16px] text-[#84240C] font-medium">{{ product1[slide-1] }}</p>
         </div>
         <div class="lg:w-[33%]"></div>
       </div>

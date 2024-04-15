@@ -39,7 +39,7 @@ export default defineComponent({
   <div>
     <div class="relative mt-20">
       <Carousel ref="myCarousel" :autoplay="6000" :wrap-around="true" :transition="600">
-        <slide v-for="slide in 6" :key="slide">
+        <slide v-for="slide in 4" :key="slide">
           <div class="">
             <img class="w-screen object-cover lg:h-[90vh] h-[40vh]" :src="'/images/hero/slide-' + slide + '.png'"
               alt="">
@@ -58,7 +58,7 @@ export default defineComponent({
     <!-- <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
       <source src="/images/hero-vid.mp4" type="video/mp4">
     </video> -->
-    <div class="bg-[#F6F6F6] lg:py-32 px-6 py-12">
+    <div class="bg-[#FFE7BF] text-[#84240C] lg:py-32 px-6 py-12">
       <div class="lg:w-[70%] mx-auto text-center">
         <p class="lg:text-[30px] font-medium mb-4 text-xl ">About Finishing Warehouse</p>
         <p class="">At Finishing Warehouse, we are committed to providing sustainable housing finishing
@@ -80,39 +80,39 @@ export default defineComponent({
     </div>
     <div class="lg:px-20 px-4 lg:py-10 py-8">
       <div class="flex justify-between">
-        <p class="lg:text-[35px] font-medium lg:my-3 text-2xl">Product Categories</p>
+        <p class="lg:text-[35px] font-medium text-[#84240C] lg:my-3 text-2xl">Bathroom Products </p>
       </div>
       <div class="lg:flex justify-between my-4">
         <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
           <NuxtLink to="/products/1">
-            <img class="w-full" src="/images/categories/001.png" alt="">
-            <div class="bg-[#0F0F0F] flex justify-between p-5">
-              <p class="lg:text-[25px] text-2xl text-white ">Bathroom Finish</p>
-              <img src="/images/icons/arrow-1.svg" alt="">
+            <img class="w-full" src="/images/categories/002.png" alt="">
+            <div class="bg-[#FFE7BF] p-5">
+              <p class=" lg:text-base text-sm font-medium text-center text-[#84240C] ">Concealed / Hung WCs</p>
+              <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
             </div>
           </NuxtLink>
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <!-- <NuxtLink to="/products/2"> -->
-          <img class="w-full" src="/images/categories/002.png" alt="">
-          <div class="bg-[#0F0F0F] flex justify-between p-5">
-            <p class=" lg:text-[25px] text-2xl  text-white ">Wall Finish</p>
+          <img class="w-full" src="/images/categories/003.png" alt="">
+          <div class="bg-[#FFE7BF] p-5">
+            <p class=" lg:text-base font-medium text-center text-sm  text-[#84240C] ">Mirrors</p>
             <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
           </div>
           <!-- </NuxtLink> -->
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <!-- <NuxtLink to="/products/3"> -->
-          <img class="w-full" src="/images/categories/003.png" alt="">
-          <div class="bg-[#0F0F0F] flex justify-between p-5">
-            <p class=" lg:text-[25px] text-2xl text-white ">Kitchen Finish</p>
+          <img class="w-full" src="/images/categories/001.png" alt="">
+          <div class="bg-[#FFE7BF] p-5">
+            <p class=" lg:text-base text-sm font-medium text-center text-[#84240C] ">Vanities Wash Basins</p>
             <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
           </div>
           <!-- </NuxtLink> -->
         </div>
       </div>
       <div class="text-center my-3">
-        <NuxtLink to="/products">
+        <NuxtLink to="/products/1">
           <button
             class="text-[14px] text-center  mx-auto text-[#84240C] lg:w-60 w-[70%] font-semibold p-2 my-auto">DISCOVER
             MORE
@@ -135,7 +135,7 @@ export default defineComponent({
 
       <div class="pt-6">
         <div class="flex my-8 justify-between">
-          <p class="lg:text-[35px] font-medium text-2xl">Projects</p>
+          <p class="lg:text-[35px] text-[#84240C] font-medium text-2xl">Projects</p>
           <div class="flex lg:w-28 w- justify-between">
             <img @click="myCarousel.prev()" class="w-12 cursor-pointer" src="/images/prev.svg" alt="">
             <img @click="myCarousel.next()" class="w-12 lg:ml-0 ml-2 cursor-pointer" src="/images/next.svg" alt="">
@@ -152,7 +152,7 @@ export default defineComponent({
       <div class="pt-6">
         <div class="my-8">
           <div class="border-b lg:py-6 text-center my-6 vorder-[#7D7D7D]">
-            <p class="lg:text-[35px] font-medium text-2xl lg:mb-0 mb-4">Brand Partners</p>
+            <p class="lg:text-[35px] text-[#84240C] font-medium text-2xl lg:mb-0 mb-4">Brand Partners</p>
           </div>
           <div class="lg:flex hidden justify-between flex-wrap">
             <div class="mb-3 lg:w-[13%] w-[48%]" v-for="index in 7" :key="index">

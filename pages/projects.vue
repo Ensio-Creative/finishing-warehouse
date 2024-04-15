@@ -27,8 +27,9 @@
         </div>
         <img class="mb-8" src="/images/projects/projects1.png" alt="">
 
-        <img class="mb-8 lg:ml-auto" src="/images/projects/projects2.png" alt="">
-        <img src="/images/projects/projects3.png" alt="">
+        <img class="mb-8 lg:ml-auto" src="/images/projects/projects4.png" alt="">
+        <img class="mb-8" src="/images/projects/projects3.png" alt="">
+        <img class="lg:ml-auto" src="/images/projects/projects2.png" alt="">
       </div>
     </div>
 
