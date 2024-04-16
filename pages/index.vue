@@ -80,23 +80,23 @@ export default defineComponent({
     </div>
     <div class="lg:px-20 px-4 lg:py-10 py-8">
       <div class="flex justify-between">
-        <p class="lg:text-[35px] font-medium text-[#84240C] lg:my-3 text-2xl">Bathroom Products </p>
+        <p class="lg:text-[35px] font-medium text-[#84240C] lg:my-3 text-2xl">Bathroom Finish </p>
       </div>
       <div class="lg:flex justify-between my-4">
         <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
-          <NuxtLink to="/products/1">
-            <img class="w-full" src="/images/categories/002.png" alt="">
-            <div class="bg-[#FFE7BF] p-5">
-              <p class=" lg:text-base text-sm font-medium text-center text-[#84240C] ">Concealed / Hung WCs</p>
-              <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
-            </div>
-          </NuxtLink>
+          <!-- <NuxtLink to="/products/1"> -->
+          <img class="w-full" src="/images/categories/002.png" alt="">
+          <div class="bg-[#FFE7BF] p-5">
+            <p class=" lg:text-[16px] text-sm font-medium text-center text-[#84240C] ">Concealed / Hung WCs</p>
+            <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
+          </div>
+          <!-- </NuxtLink> -->
         </div>
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <!-- <NuxtLink to="/products/2"> -->
           <img class="w-full" src="/images/categories/003.png" alt="">
           <div class="bg-[#FFE7BF] p-5">
-            <p class=" lg:text-base font-medium text-center text-sm  text-[#84240C] ">Mirrors</p>
+            <p class="lg:text-[16px] font-medium text-center text-sm  text-[#84240C] ">Mirrors</p>
             <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
           </div>
           <!-- </NuxtLink> -->
@@ -105,7 +105,7 @@ export default defineComponent({
           <!-- <NuxtLink to="/products/3"> -->
           <img class="w-full" src="/images/categories/001.png" alt="">
           <div class="bg-[#FFE7BF] p-5">
-            <p class=" lg:text-base text-sm font-medium text-center text-[#84240C] ">Vanities Wash Basins</p>
+            <p class="lg:text-[16px] text-sm font-medium text-center text-[#84240C] ">Vanities Wash Basins</p>
             <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
           </div>
           <!-- </NuxtLink> -->

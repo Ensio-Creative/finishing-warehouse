@@ -104,7 +104,7 @@ const setToggle = () => {
         </div>
       </div>
     </div>
-    <div v-if="toggle" class="fixed top-0 left-0 w-full p-6 h-screen bg-white">
+    <div v-if="toggle" class="fixed text-[#84240C] top-0 left-0 w-full p-6 h-screen bg-white">
       <img @click="toggle = false" class="ml-auto -mt-3 cursor-pointer" src="/images/icons/close.svg" alt="">
       <div class="border-b my-4 mt-8  border-[#D9D9D9]">
         <NuxtLink to="/" @click="toggle = !toggle">
