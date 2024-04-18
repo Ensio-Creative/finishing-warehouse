@@ -160,7 +160,7 @@ export default defineComponent({
             </div>
           </div>
           <div class="lg:hidden block">
-            <Carousel snap-align="start" pause-autoplay-on-hover="true" items-to-show="2" transition="700"
+            <Carousel snap-align="start" pause-autoplay-on-hover="true" items-to-show="2" transition="1500"
               :items-to-scroll="2" wrap-around="true" autoplay="1">
               <slide v-for="index in 7" :key="slide">
                 <div>
