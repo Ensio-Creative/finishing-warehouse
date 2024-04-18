@@ -86,8 +86,8 @@ export default defineComponent({
         <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
           <!-- <NuxtLink to="/products/1"> -->
           <img class="w-full" src="/images/categories/002.png" alt="">
-          <div class="bg-[#FFE7BF] p-5">
-            <p class=" lg:text-[16px] text-sm font-medium text-center text-[#84240C] ">Concealed / Hung WCs</p>
+          <div class="bg-[#F6F6F6] p-5">
+            <p class=" lg:text-[16px] text-sm font-medium text-center text-[#0F0F0F] ">Concealed / Hung WCs</p>
             <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
           </div>
           <!-- </NuxtLink> -->
@@ -95,8 +95,8 @@ export default defineComponent({
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <!-- <NuxtLink to="/products/2"> -->
           <img class="w-full" src="/images/categories/003.png" alt="">
-          <div class="bg-[#FFE7BF] p-5">
-            <p class="lg:text-[16px] font-medium text-center text-sm  text-[#84240C] ">Mirrors</p>
+          <div class="bg-[#F6F6F6] p-5">
+            <p class="lg:text-[16px] font-medium text-center text-sm  text-[#0F0F0F] ">Mirrors</p>
             <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
           </div>
           <!-- </NuxtLink> -->
@@ -104,8 +104,8 @@ export default defineComponent({
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <!-- <NuxtLink to="/products/3"> -->
           <img class="w-full" src="/images/categories/001.png" alt="">
-          <div class="bg-[#FFE7BF] p-5">
-            <p class="lg:text-[16px] text-sm font-medium text-center text-[#84240C] ">Vanities Wash Basins</p>
+          <div class="bg-[#F6F6F6] p-5">
+            <p class="lg:text-[16px] text-sm font-medium text-center text-[#0F0F0F] ">Vanities Wash Basins</p>
             <!-- <img src="/images/icons/arrow-1.svg" alt=""> -->
           </div>
           <!-- </NuxtLink> -->
