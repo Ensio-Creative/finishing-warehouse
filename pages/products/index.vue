@@ -2,7 +2,7 @@
 const slider = ref([
   {
     title: "Bathroom Finish",
-    slug: "bathrom-finish",
+    slug: "bathroom-finish",
     des: "Transform your bathroom into a luxurious oasis with our range of high-quality bathroom solutions. From sleek faucets and modern vanities to elegant showers and stylish accessories, we have everything you need to create the perfect retreat."
   },
   {
