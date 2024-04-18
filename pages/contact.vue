@@ -26,21 +26,21 @@
         </div>
       </div> -->
       <div class="lg:flex justify-between lg:py-16 py-10 lg:mb-10 ">
-        <div class="bg-[#FFE7BF] pt-10 p-6 text-[#84240C] rounded-xl lg:w-[28%]">
+        <div class="bg-[#F6F6F6] pt-10 p-6 rounded-xl lg:w-[28%]">
           <!-- <div class="mb-8">
             <p class="font-medium text-lg mb-2">Office Address</p>
             <p class="font-thin">Suite D28, Efab Mall, Garki, Area 11, FCT, Abuja</p>
           </div> -->
           <div class="mb-8">
-            <p class="font-medium text-lg mb-2">Abuja Showroom Address</p>
+            <p class="font-medium text-[#84240C]  text-lg mb-2">Abuja Showroom Address</p>
             <p class="">Our Showroom is located on the second floor, Machima Plaza, Mambolo Street, Abuja</p>
           </div>
           <div class="mb-8">
-            <p class="font-medium text-lg mb-2">Email</p>
+            <p class="font-medium text-[#84240C]  text-lg mb-2">Email</p>
             <p class="">info@finishingwarehouse.com</p>
           </div>
           <div>
-            <p class="font-medium text-lg mb-2">Phone</p>
+            <p class="font-medium text-[#84240C]  text-lg mb-2">Phone</p>
             <p class="">+234 905 276 6460</p>
           </div>
         </div>
@@ -48,28 +48,28 @@
           <div class="lg:flex lg:my-4 justify-between">
             <div class="lg:w-[48%]">
               <input type="text" placeholder="First Name*"
-                class="w-full bg-transparent border-b border-[#0F0F0F] p-4 focus:outline-none text-[#0F0F0F] text-sm">
+                class="w-full bg-transparent border-b border-[#84240C] p-4 focus:outline-none text-[#0F0F0F] text-sm">
             </div>
             <div class="lg:w-[48%]">
               <input type="text" placeholder="Last Name*"
-                class="w-full bg-transparent border-b border-[#0F0F0F] p-4 focus:outline-none text-[#0F0F0F] text-sm">
+                class="w-full bg-transparent border-b border-[#84240C] p-4 focus:outline-none text-[#0F0F0F] text-sm">
             </div>
           </div>
           <div class="lg:flex lg:my-6 justify-between">
             <div class="lg:w-[48%]">
               <input type="text" placeholder="Email Address"
-                class="w-full bg-transparent border-b border-[#0F0F0F] p-4 focus:outline-none text-[#0F0F0F] text-sm">
+                class="w-full bg-transparent border-b border-[#84240C] p-4 focus:outline-none text-[#0F0F0F] text-sm">
             </div>
             <div class="lg:w-[48%]">
               <input type="text" placeholder="Phone Number*"
-                class="w-full bg-transparent border-b border-[#0F0F0F] p-4 focus:outline-none text-[#0F0F0F] text-sm">
+                class="w-full bg-transparent border-b border-[#84240C] p-4 focus:outline-none text-[#0F0F0F] text-sm">
             </div>
           </div>
           <div class="my-8">
             <textarea placeholder="Your Message*"
-              class="p-4 text-sm border text-[#0F0F0F] rounded-xl border-[#0F0F0F] h-72 focus:outline-none w-full bg-transparent"></textarea>
+              class="p-4 text-sm border text-[#0F0F0F] rounded-xl border-[#84240C] h-72 focus:outline-none w-full bg-transparent"></textarea>
           </div>
-          <button class="bg-[#0F0F0F] rounded-xl text-white w-full p-3">SEND MESSAGE</button>
+          <button class="bg-[#84240C] rounded-xl text-white w-full p-3">SEND MESSAGE</button>
         </div>
       </div>
     </div>

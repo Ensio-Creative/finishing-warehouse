@@ -2,6 +2,7 @@
 const slider = ref([
   {
     title: "Bathroom Finish",
+    slug: "bathrom-finish",
     des: "Transform your bathroom into a luxurious oasis with our range of high-quality bathroom solutions. From sleek faucets and modern vanities to elegant showers and stylish accessories, we have everything you need to create the perfect retreat."
   },
   {
@@ -43,14 +44,14 @@ const slider = ref([
       <!-- <p>Explore our product categories.</p> -->
 
 
-      <div v-for="slide in 7" :key="slide" class="my-6 relative">
-        <img class=" lg:h-auto h-52 object-cover" :src="'/images/products/product' + slide + '.png'" alt="">
-        <div class="lg:absolute bottom-0 lg:p-10 p-6 left-0 bg-[#FFE7BF] text-[#84240C] lg:w-[50%]">
-          <p class=" lg:text-[35px] text-2xl my-2">{{ slider[slide - 1].title }}</p>
-          <p class="">{{ slider[slide - 1].des }}</p>
-          <NuxtLink v-if="slide === 1" :to="'/products/' + slide">
+      <div v-for="(slide, index) in slider" :key="index" class="my-6 relative">
+        <img class=" lg:h-auto h-52 object-cover" :src="'/images/products/product' + index + '.png'" alt="">
+        <div class="lg:absolute bottom-0 lg:p-10 p-6 left-0 bg-[#F6F6F6] text-[#84240C] lg:w-[50%]">
+          <p class=" lg:text-[35px] text-2xl my-2">{{ slide.title }}</p>
+          <p class="text-[#0F0F0F]">{{ slide.des }}</p>
+          <NuxtLink v-if="index === 0" :to="'/products/' + slide.slug">
             <p class=" flex text-sm mt-5 font-medium">VIEW PRODUCTS
-              <img src="/images/icons/arrow-1.svg" class="w-4 ml-2"alt="">
+              <img src="/images/icons/arrow-1.svg" class="w-4 ml-2" alt="">
             </p>
           </NuxtLink>
         </div>

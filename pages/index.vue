@@ -34,7 +34,7 @@ export default defineComponent({
 <template>
 
   <Head>
-    <Title>Finishing Warehouse - </Title>
+    <Title>Finishing Warehouse - Home for innovative and eco-friendly bathroom solutions</Title>
   </Head>
   <div>
     <div class="relative mt-20">
@@ -58,10 +58,10 @@ export default defineComponent({
     <!-- <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
       <source src="/images/hero-vid.mp4" type="video/mp4">
     </video> -->
-    <div class="bg-[#FFE7BF] text-[#84240C] lg:py-32 px-6 py-12">
+    <div class="bg-[#F6F6F6] text-[#84240C] lg:py-32 px-6 py-12">
       <div class="lg:w-[70%] mx-auto text-center">
         <p class="lg:text-[30px] font-medium mb-4 text-xl ">About Finishing Warehouse</p>
-        <p class="">At Finishing Warehouse, we are committed to providing sustainable housing finishing
+        <p class="text-[#0F0F0F]">At Finishing Warehouse, we are committed to providing sustainable housing finishing
           solutions that not only
           enhance your space but also minimize our environmental footprint. From exquisite bathroom solutions to stylish
           kitchen fittings, ambient lighting, and elegant wall finishings, we offer eco-friendly materials and
@@ -160,7 +160,7 @@ export default defineComponent({
             </div>
           </div>
           <div class="lg:hidden block">
-            <Carousel snap-align="start" pause-autoplay-on-hover="true" items-to-show="2" transition="300"
+            <Carousel snap-align="start" pause-autoplay-on-hover="true" items-to-show="2" transition="700"
               :items-to-scroll="2" wrap-around="true" autoplay="1">
               <slide v-for="index in 7" :key="slide">
                 <div>
