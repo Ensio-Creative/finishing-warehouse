@@ -50,7 +50,7 @@ export default defineComponent({
       </div>
 
       <div class="absolute lg:top-60 top-24 left-0 right-0 text-center">
-        <p class="lg:text-[50px] leading-10 text-3xl text-white font-bold">Home for innovative and <br>
+        <p class="lg:text-[50px] lg:leading-[50px] text-3xl text-white font-bold">Home for innovative and <br>
           eco-friendly bathroom <br>
           solutions</p>
       </div>
@@ -60,7 +60,7 @@ export default defineComponent({
     </video> -->
     <div class="bg-[#F0F0F0] text-[#84240C] lg:py-32 px-6 py-12">
       <div class="lg:w-[70%] mx-auto text-center">
-        <p class="lg:text-[35px] font-medium mb-4 text-xl ">About Finishing Warehouse</p>
+        <p class="lg:text-[35px] font-medium mb-4 text-2xl ">About Finishing Warehouse</p>
         <p class="text-[#0F0F0F]">At Finishing Warehouse, we are committed to providing sustainable housing finishing
           solutions that not only
           enhance your space but also minimize our environmental footprint. From exquisite bathroom solutions to stylish
@@ -86,7 +86,7 @@ export default defineComponent({
         <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
           <!-- <NuxtLink to="/products/1"> -->
           <img class="w-full" src="/images/categories/002.png" alt="">
-          <p class="absolute bottom-7 left-0 right-0 lg:text-[20px] text-sm font-medium text-center text-white">
+          <p class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
             Concealed / Hung
             WCs</p>
 
@@ -98,7 +98,7 @@ export default defineComponent({
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <!-- <NuxtLink to="/products/2"> -->
           <img class="w-full" src="/images/categories/003.png" alt="">
-          <p class="absolute bottom-7 left-0 right-0 lg:text-[20px] text-sm font-medium text-center text-white">
+          <p class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
             Mirrors</p>
           <!-- <div class="bg-[#F6F6F6] p-5">
             <p class="lg:text-[16px] font-medium text-center text-sm  text-[#0F0F0F] ">Mirrors</p>
@@ -108,7 +108,7 @@ export default defineComponent({
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <!-- <NuxtLink to="/products/3"> -->
           <img class="w-full" src="/images/categories/001.png" alt="">
-          <p class="absolute bottom-7 left-0 right-0 lg:text-[20px] text-sm font-medium text-center text-white">
+          <p class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
             Vanities Wash Basins</p>
           <!-- <div class="bg-[#F6F6F6] p-5">
             <p class="lg:text-[16px] text-sm font-medium text-center text-[#0F0F0F] ">Vanities Wash Basins</p>
@@ -119,9 +119,9 @@ export default defineComponent({
       <div class="text-center my-3">
         <NuxtLink to="/products/1">
           <button
-            class="text-[14px] text-center flex mx-auto text-[#84240C] lg:w-60 w-[70%] font-semibold p-2 my-auto">DISCOVER
+            class="text-[14px] text-center mx-auto text-[#84240C] lg:w-60 w-[70%] font-semibold p-2 my-auto">DISCOVER
             MORE
-            <img class="my-auto ml-4" src="/images/new-arrow.svg" alt="">
+            <!-- <img class="my-auto ml-4" src="/images/new-arrow.svg" alt=""> -->
           </button>
         </NuxtLink>
       </div>
