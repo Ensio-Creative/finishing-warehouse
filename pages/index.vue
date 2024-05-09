@@ -117,7 +117,7 @@ export default defineComponent({
         </div>
       </div>
       <div class="text-center my-3">
-        <NuxtLink to="/products/1">
+        <NuxtLink to="/products/bathroom-finish">
           <button
             class="text-[14px] text-center mx-auto text-[#84240C] lg:w-60 w-[70%] font-semibold p-2 my-auto">DISCOVER
             MORE
