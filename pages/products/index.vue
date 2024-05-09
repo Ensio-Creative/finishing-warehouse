@@ -46,7 +46,7 @@ const slider = ref([
 
       <div v-for="(slide, index) in slider" :key="index" class="my-6 relative">
         <img class=" lg:h-auto h-52 object-cover" :src="'/images/products/product' + index + '.png'" alt="">
-        <div class="lg:absolute bottom-0 lg:p-10 p-6 left-0 bg-[#F6F6F6] text-[#84240C] lg:w-[50%]">
+        <div class="lg:absolute bottom-0 lg:p-10 p-6 left-0 bg-[#F0F0F0] text-[#84240C] lg:w-[50%]">
           <p class=" lg:text-[35px] text-2xl my-2">{{ slide.title }}</p>
           <p class="text-[#0F0F0F]">{{ slide.des }}</p>
           <NuxtLink v-if="index === 0" :to="'/products/' + slide.slug">
