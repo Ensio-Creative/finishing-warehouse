@@ -49,10 +49,12 @@ export default defineComponent({
       <div class="bg-[#0F0F0F33] absolute top-0 w-full lg:h-[90vh] h-[40vh] ">
       </div>
 
-      <div class="absolute lg:top-60 top-24 left-0 right-0 text-center">
-        <p class="lg:text-[50px] lg:leading-[50px] text-3xl text-white font-bold">Home for innovative and <br>
-          eco-friendly bathroom <br>
+      <div class="absolute lg:top-60 top-24 lg:left-0 lg:right-0 left-4 right-4 text-center">
+       <div class="lg:w-1/2 mx-auto">
+        <p class="lg:text-[50px]  lg:leading-[50px] text-3xl text-white font-bold">Home for innovative and 
+          eco-friendly bathroom
           solutions</p>
+       </div>
       </div>
     </div>
     <!-- <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
