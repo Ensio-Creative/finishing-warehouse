@@ -1,14 +1,22 @@
 <script setup lang="ts">
+
 const position = ref(0)
 const toggle = ref(false)
 const products = ref(false)
 const dropdown = ref(false)
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 onMounted(() => {
+  scrollToTop();
+
   setInterval(function () {
     position.value = window?.scrollY
     // console.log(window?.scrollY)
   }, 1000);
 })
+
 
 const setToggle = () => {
   toggle.value = !toggle
@@ -17,12 +25,12 @@ const setToggle = () => {
 
 <template>
   <div class="w-full fixed top-0 z-30 bg-[#FFFFFF] flex justify-between lg:px-20 px-4 py-5">
-    <NuxtLink @click="dropdown = false" to="/" class="z-30">
+    <NuxtLink @click="dropdown = false, scrollToTop()" to="/" class="z-30">
       <img class="lg:w-auto w-[140px] my-auto" src="/images/logo.png" />
     </NuxtLink>
     <img @click="toggle = !toggle" class="lg:hidden block cursor-pointer" src="/images/icons/bars.svg" alt="">
     <div class="w-[40%] z-10 uppercase text-[#84240C] lg:flex hidden justify-between my-auto font-medium text-[12px]">
-      <NuxtLink to="/">
+      <NuxtLink to="/" @click="scrollToTop()">
         <p @click="dropdown = false">Home</p>
       </NuxtLink>
       <p class="flex cursor-pointer">
@@ -107,7 +115,7 @@ const setToggle = () => {
     <div v-if="toggle" class="fixed text-[#0F0F0F] top-0 left-0 w-full p-6 h-screen bg-white">
       <img @click="toggle = false" class="ml-auto -mt-3 cursor-pointer" src="/images/icons/close.svg" alt="">
       <div class="border-b my-4 mt-8  border-[#D9D9D9]">
-        <NuxtLink to="/" @click="toggle = !toggle">
+        <NuxtLink to="/" @click="toggle = !toggle, scrollToTop()">
           <p class="text-3xl py-3">Home</p>
         </NuxtLink>
       </div>
