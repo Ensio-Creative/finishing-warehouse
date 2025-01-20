@@ -29,9 +29,12 @@ const setToggle = () => {
       <img class="lg:w-auto w-[140px] my-auto" src="/images/logo.png" />
     </NuxtLink>
     <img @click="toggle = !toggle" class="lg:hidden block cursor-pointer" src="/images/icons/bars.svg" alt="">
-    <div class="w-[40%] z-10 uppercase text-[#84240C] lg:flex hidden justify-between my-auto font-medium text-[12px]">
+    <div class="w-[40%] z-10 uppercase text-[#0F0F0F] lg:flex hidden justify-between my-auto font-medium text-[12px]">
       <NuxtLink to="/" @click="scrollToTop()">
         <p @click="dropdown = false">Home</p>
+      </NuxtLink>
+      <NuxtLink to="/what-we-do" @click="scrollToTop()">
+        <p @click="dropdown = false">What We Do</p>
       </NuxtLink>
       <p class="flex cursor-pointer">
         <NuxtLink to="/products">
@@ -117,6 +120,11 @@ const setToggle = () => {
       <div class="border-b my-4 mt-8  border-[#D9D9D9]">
         <NuxtLink to="/" @click="toggle = !toggle, scrollToTop()">
           <p class="text-3xl py-3">Home</p>
+        </NuxtLink>
+      </div>
+      <div class="border-b my-4  border-[#D9D9D9]">
+        <NuxtLink to="/what-we-do" @click="toggle = !toggle, scrollToTop()">
+          <p class="text-3xl py-3">What We Do</p>
         </NuxtLink>
       </div>
       <div class="border-b py-3 flex flex-wrap justify-between my-4 border-[#D9D9D9]">

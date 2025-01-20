@@ -3,11 +3,32 @@ import { defineComponent } from 'vue'
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
+
+
 export default defineComponent({
   setup() {
-    const myCarousel = ref(null)
+    const myCarousel = ref(null);
+    const data = reactive([
+      {
+        title: "We Set Trends",
+        text: "Our offerings are inspired by global styles and tailored for the Nigerian market."
+      },
+      {
+        title: "We Ensure Quality",
+        text: "Partnering with trusted international and local brands, we deliver only the best materials and products."
+      },
+      {
+        title: "We Focus on You",
+        text: "Personalized consultations and bespoke solutions ensure that every client’s needs are met."
+      },
+      {
+        title: "We Transform Spaces",
+        text: "Beyond products, we deliver a lifestyle upgrade that makes every home stand out."
+      }
+    ]);
     return {
       myCarousel,
+      data,
       breakpoints: {
         // 700px and up
         700: {
@@ -49,12 +70,12 @@ export default defineComponent({
       <div class="bg-[#0F0F0F33] absolute top-0 w-full lg:h-[90vh] h-[40vh] ">
       </div>
 
-      <div class="absolute lg:top-60 top-24 lg:left-0 lg:right-0 left-4 right-4 text-center">
-       <div class="lg:w-1/2 mx-auto">
-        <p class="lg:text-[50px]  lg:leading-[50px] text-3xl text-white font-bold">Home for innovative and 
-          eco-friendly bathroom
-          solutions</p>
-       </div>
+      <div class="absolute lg:top-56 top-12 lg:left-0 lg:right-0 left-4 right-4 text-center">
+        <div class="lg:w-[55%] mx-auto">
+          <p class="lg:text-[22px] text-base text-white">Finishing Warehouse Nigeria Limited</p>
+          <p class="lg:text-[50px] lg:leading-[50px] text-3xl text-white font-bold">Transforming Bathrooms and
+            Kitchens into Lifestyle Statements</p>
+        </div>
       </div>
     </div>
     <!-- <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
@@ -88,7 +109,8 @@ export default defineComponent({
         <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
           <!-- <NuxtLink to="/products/1"> -->
           <img class="w-full" src="/images/categories/002.png" alt="">
-          <p class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
+          <p
+            class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
             Concealed / Hung
             WCs</p>
 
@@ -100,7 +122,8 @@ export default defineComponent({
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <!-- <NuxtLink to="/products/2"> -->
           <img class="w-full" src="/images/categories/003.png" alt="">
-          <p class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
+          <p
+            class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
             Mirrors</p>
           <!-- <div class="bg-[#F6F6F6] p-5">
             <p class="lg:text-[16px] font-medium text-center text-sm  text-[#0F0F0F] ">Mirrors</p>
@@ -110,7 +133,8 @@ export default defineComponent({
         <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
           <!-- <NuxtLink to="/products/3"> -->
           <img class="w-full" src="/images/categories/001.png" alt="">
-          <p class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
+          <p
+            class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
             Vanities Wash Basins</p>
           <!-- <div class="bg-[#F6F6F6] p-5">
             <p class="lg:text-[16px] text-sm font-medium text-center text-[#0F0F0F] ">Vanities Wash Basins</p>
@@ -138,6 +162,17 @@ export default defineComponent({
         <!-- <img src="/images/quality-seal.png" class="absolute lg:w-auto w-20 lg:top-10 top-14 left-0 right-0 mx-auto"
           alt=""> -->
         <!-- <img src="/images/product-chair.png" class="lg:h-auto h-[209px] object-cover" alt=""> -->
+      </div>
+
+      <div class="pt-14">
+        <p class="lg:text-[35px] text-[#84240C] font-medium text-2xl">Why Choose Us</p>
+        <div class="grid lg:grid-cols-4 gap-3 mt-6">
+          <div v-for="(single, index) in data" :key="index" class="p-6 bg-[#FAFAFA] border border-[#E1E1DF]">
+            <img src="/images/beacon.png" alt="">
+            <p class="text-[#84240C] mt-8 mb-4">{{ single.title }}</p>
+            <p class="text-[#0F0F0F]">{{ single.text }}</p>
+          </div>
+        </div>
       </div>
 
       <div class="pt-6">
