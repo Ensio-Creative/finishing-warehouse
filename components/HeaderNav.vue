@@ -33,8 +33,8 @@ const setToggle = () => {
       <NuxtLink to="/" @click="scrollToTop()">
         <p @click="dropdown = false">Home</p>
       </NuxtLink>
-      <NuxtLink to="/what-we-do" @click="scrollToTop()">
-        <p @click="dropdown = false">What We Do</p>
+      <NuxtLink to="/what-we-offer" @click="scrollToTop()">
+        <p @click="dropdown = false">What We Offer</p>
       </NuxtLink>
       <p class="flex cursor-pointer">
         <NuxtLink to="/products">
@@ -123,8 +123,8 @@ const setToggle = () => {
         </NuxtLink>
       </div>
       <div class="border-b my-4  border-[#D9D9D9]">
-        <NuxtLink to="/what-we-do" @click="toggle = !toggle, scrollToTop()">
-          <p class="text-3xl py-3">What We Do</p>
+        <NuxtLink to="/what-we-offer" @click="toggle = !toggle, scrollToTop()">
+          <p class="text-3xl py-3">What We Offer</p>
         </NuxtLink>
       </div>
       <div class="border-b py-3 flex flex-wrap justify-between my-4 border-[#D9D9D9]">

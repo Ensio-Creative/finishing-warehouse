@@ -38,30 +38,30 @@
       </div>
     </section>
 
-    <section class="lg:px-20 px-4 pb-12">
+    <section class="lg:px-20 px-4 lg:mt-20">
       <div class="lg:w-1/2 mb-6">
         <p class="lg:text-[35px] text-[#84240C] text-2xl font-medium mb-4">Our Core Values</p>
         <p>At Finishing Warehouse, we operate on a foundation of <strong>Lifestyle Excellence</strong> through the 3i’s:
         </p>
       </div>
       <div class="border-y border-[#7D7D7D] flex justify-between py-6">
-        <p class="my-auto text-[20px] ">Innovation</p>
+        <p class="lg:my-auto text-[20px] ">Innovation</p>
         <p class="lg:w-1/2 w-[62%]">Staying ahead of global trends to bring cutting-edge designs and technologies to our
           clients.
         </p>
       </div>
       <div class="border-b border-[#7D7D7D] flex justify-between py-6">
-        <p class="my-auto text-[20px] ">Ingenuity</p>
+        <p class="lg:my-auto text-[20px] ">Ingenuity</p>
         <p class="lg:w-1/2 w-[62%]">Offering customized solutions that cater to the unique needs and
           tastes of every project.</p>
       </div>
       <div class="border-b border-[#7D7D7D] flex justify-between py-6">
-        <p class="my-auto text-[20px] ">Integrity</p>
+        <p class="lg:my-auto text-[20px] ">Integrity</p>
         <p class="lg:w-1/2 w-[62%]">Building lasting relationships through trust, quality, and impeccable service.</p>
       </div>
     </section>
-    <div class="lg:px-20 px-4 pb-12">
-      <img src="/images/about-2.png" alt="">
+    <div class="lg:px-20 px-4 py-20">
+      <img class="lg:h-auto h-[50vh] object-cover" src="/images/about-2.png" alt="">
     </div>
 
     <section class="lg:flex justify-between lg:px-20 px-4 pb-16">
@@ -76,7 +76,7 @@
     <section class="lg:px-20 px-4 pb-12">
       <p class="lg:text-[35px] text-[#84240C] text-2xl font-medium mb-8">Our Milestones</p>
       <div class="grid lg:grid-cols-3 gap-4">
-        <div>
+        <div class="lg:mb-0 mb-5">
           <img src="/images/milestone/milestones-1.png" alt="">
           <p class="text-[#0F0F0F] lg:w-[90%] lg:mt-6 mt-3">Supplied bespoke kitchen and bathroom solutions for luxury
             estates
@@ -84,7 +84,7 @@
             commercial projects across Nigeria.
           </p>
         </div>
-        <div>
+        <div class="lg:mb-0 mb-5">
           <img src="/images/milestone/milestones-2.png" alt="">
           <p class="text-[#0F0F0F] lg:w-[90%] lg:mt-6 mt-3">Introduced innovative products such as eco-friendly basins
             and
