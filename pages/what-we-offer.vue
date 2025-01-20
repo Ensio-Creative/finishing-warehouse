@@ -56,7 +56,7 @@ export default defineComponent({
   <main>
     <HeroComp img="wwo" text="What We offer" />
 
-    <section class="lg:px-20 px-4 pt-20 lg:pb-10">
+    <section class="lg:px-20 px-4 pt-20 pb-10">
       <div v-for="(item, index) in data" :key="index" class="lg:flex mb-12">
         <img :src="`/images/wwd/00${index + 1}.png`" class="lg:w-1/2" alt="">
         <div class="bg-[#F0F0F0] lg:p-10 p-6 lg:w-1/2">
