@@ -30,12 +30,16 @@
           (Twitter)</button>
       </div>
       <div class="lg:flex justify-between lg:text-left text-center py-8 text-white text-sm">
-        <p>Copyright © 2024 - Finishing Warehouse </p>
-        <p class="lg:mt-0 mt-4">Designed by <a href="https://ensiocreative.com/">Ensio Creative</a> </p>
+        <p>Copyright © {{ currentYear }} - Finishing Warehouse </p>
+        <p class="lg:mt-0 mt-4">Designed by <a href="https://ensiocreative.co">Ensio Creative</a> </p>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+const currentYear = new Date().getFullYear()
+</script>
 
 <style>
 .overlay {
