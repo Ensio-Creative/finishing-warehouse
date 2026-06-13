@@ -4,6 +4,13 @@ const position = ref(0)
 const toggle = ref(false)
 const products = ref(false)
 const dropdown = ref(false)
+const productCategories = [
+  { name: 'WCs', slug: 'wcs' },
+  { name: 'Washbasins', slug: 'washbasins' },
+  { name: 'Taps & Mixers', slug: 'taps-mixers' },
+  { name: 'Showers', slug: 'showers' },
+  { name: 'Assessories', slug: 'assessories' }
+]
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
@@ -33,13 +40,20 @@ const setToggle = () => {
       <NuxtLink to="/" @click="scrollToTop()">
         <p @click="dropdown = false">Home</p>
       </NuxtLink>
-      <p class="flex cursor-pointer">
-        <NuxtLink to="/products">
-          Products
-        </NuxtLink>
-        <!-- <img v-if="dropdown" class="my-auto ml-2" src="/images/icons/more.svg" alt="">
-        <img v-else class="my-auto rotate-180 ml-2" src="/images/icons/more.svg" alt=""> -->
-      </p>
+      <div class="relative group" @mouseenter="dropdown = true" @mouseleave="dropdown = false">
+        <p class="flex cursor-pointer">
+          <NuxtLink to="/products">
+            Products
+          </NuxtLink>
+          <img v-if="dropdown" class="my-auto ml-2" src="/images/caret-down-2.svg" alt="">
+          <img v-else class="my-auto ml-2" src="/images/caret-down-1.svg" alt="">
+        </p>
+        <div v-if="dropdown" class="absolute top-full left-0 bg-white shadow-lg py-2 min-w-[200px] z-40">
+          <NuxtLink v-for="cat in productCategories" :key="cat.slug" :to="`/products/${cat.slug}`" class="block px-4 capitalize py-2 hover:bg-gray-100" @click="dropdown = false">
+            {{ cat.name }}
+          </NuxtLink>
+        </div>
+      </div>
       <NuxtLink to="/services" @click="scrollToTop()">
         <p @click="dropdown = false">Services</p>
       </NuxtLink>
@@ -53,68 +67,7 @@ const setToggle = () => {
         <p @click="dropdown = false">Contact</p>
       </NuxtLink>
     </div>
-    <div v-show="dropdown" class="w-full bg-white absolute top-0 left-0 h-screen">
-      <div class="flex justify-center px-20 py-32">
-        <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/1" @click="dropdown = !dropdown">
-            <img src="/images/products/1.png" class="object-cover w-full h-80" alt="">
-            <div class="-rotate-90 text-xl absolute text-white bottom-20 -right-12">Bathroom Finish</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
-          </NuxtLink>
-        </div>
-        <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/2" @click="dropdown = !dropdown">
-            <img src="/images/products/2.png" class="object-cover w-full h-80" alt="">
-            <div class="-rotate-90 text-xl absolute text-white bottom-14 -right-6">Wall Finish</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
-          </NuxtLink>
-        </div>
-        <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/3" @click="dropdown = !dropdown">
-            <img src="/images/products/3.png" class="object-cover h-80 w-full" alt="">
-            <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-11">Kitchen Finish</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
-          </NuxtLink>
-        </div>
-        <!-- <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/4" @click="dropdown = !dropdown">
-            <img src="/images/products/4.png" class="object-cover w-full h-80" alt="">
-            <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-10">Indoor Finish</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
-          </NuxtLink>
-        </div> -->
-        <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/4" @click="dropdown = !dropdown">
-            <img src="/images/products/5.png" class="object-cover h-80 w-full" alt="">
-            <div class="-rotate-90 text-xl absolute text-white bottom-20 -right-12">Outdoor Finish</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
-          </NuxtLink>
-        </div>
-        <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/5" @click="dropdown = !dropdown">
-            <img src="/images/products/6.png" class="object-cover h-80 w-full" alt="">
-            <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div>
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
-          </NuxtLink>
-        </div>
-        <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/6" @click="dropdown = !dropdown">
-            <img src="/images/products/7.png" class="object-cover h-80 w-full" alt="">
-            <div class="-rotate-90 text-xl absolute text-white bottom-12 -right-4">Lighting</div>
-            <!-- <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div> -->
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
-          </NuxtLink>
-        </div>
-        <div class="w-[12.5%] relative">
-          <NuxtLink to="/products/7" @click="dropdown = !dropdown">
-            <img src="/images/products/8.png" class="object-cover h-80 w-full" alt="">
-            <div class="-rotate-90 text-xl absolute text-white bottom-12 -right-4">Curtains</div>
-            <!-- <div class="-rotate-90 text-xl absolute text-white bottom-16 -right-8">Home Decor</div> -->
-            <img class="absolute top-3 cursor-pointer right-3 w-6" src="/images/icons/arrow.svg" alt="">
-          </NuxtLink>
-        </div>
-      </div>
-    </div>
+
     <div v-if="toggle" class="fixed text-[#0F0F0F] top-0 left-0 w-full p-6 h-screen bg-white">
       <img @click="toggle = false" class="ml-auto mt-2 cursor-pointer" src="/images/close.svg" alt="">
       <div class="border-b my-4 mt-20  border-[#D9D9D9]">
@@ -132,7 +85,11 @@ const setToggle = () => {
         <img v-else class="w-6 cursor-pointer" @click="products = !products" src="/images/caret-down-1.svg" alt="">
 
         <div class="w-full" v-show="products">
-          <MobileProducts :toggle="setToggle" />
+          <div v-for="cat in productCategories" :key="cat.slug">
+            <NuxtLink :to="`/products/${cat.slug}`" @click="toggle = false, products = false">
+              <p class="text-lg uppercase py-3 pl-4">{{ cat.name }}</p>
+            </NuxtLink>
+          </div>
         </div>
       </div>
       <div class="border-b my-4  border-[#D9D9D9]">
