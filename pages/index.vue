@@ -60,152 +60,176 @@ export default defineComponent({
   <div>
     <div class="relative mt-20">
       <Carousel ref="myCarousel" :autoplay="6000" :wrap-around="true" :transition="600">
-        <slide v-for="slide in 4" :key="slide">
+        <slide v-for="slide in 3" :key="slide">
           <div class="">
-            <img class="w-screen object-cover lg:h-[90vh] h-[40vh]" :src="'/images/hero/slide-' + slide + '.png'"
-              alt="">
+            <img class="w-screen object-cover lg:h-[90vh] h-[70vh]" :src="'/images/hero/slide' + slide + '.jpg'" alt="">
           </div>
         </slide>
       </Carousel>
-      <div class="bg-[#0F0F0F33] absolute top-0 w-full lg:h-[90vh] h-[40vh] ">
+      <div class="bg-[#0F0F0F]/60 absolute top-0 w-full lg:h-[90vh] h-[70vh] ">
       </div>
 
-      <div class="absolute lg:top-56 top-12 lg:left-0 lg:right-0 left-4 right-4 text-center">
+      <div class="absolute lg:top-60 top-12 lg:left-0 lg:right-0 left-4 right-4 text-center">
         <div class="lg:w-[55%] mx-auto">
           <p class="lg:text-[22px] text-base text-white">Finishing Warehouse Nigeria Limited</p>
           <p class="lg:text-[50px] lg:leading-[50px] text-3xl text-white font-bold">Transforming Bathrooms and
             Kitchens into Lifestyle Statements</p>
         </div>
       </div>
-    </div>
-    <!-- <video autoplay loop muted class="w-full lg:-mt-10 object-cover lg:h-[110vh] h-[80vh]">
-      <source src="/images/hero-vid.mp4" type="video/mp4">
-    </video> -->
-    <div class="bg-[#F0F0F0] text-[#84240C] lg:py-32 px-6 py-12">
-      <div class="lg:w-[70%] mx-auto text-center">
-        <p class="lg:text-[35px] font-medium mb-4 text-2xl ">About Finishing Warehouse</p>
-        <p class="text-[#0F0F0F]">At Finishing Warehouse, we are committed to providing sustainable housing finishing
-          solutions that not only
-          enhance your space but also minimize our environmental footprint. From exquisite bathroom solutions to stylish
-          kitchen fittings, ambient lighting, and elegant wall finishings, we offer eco-friendly materials and
-          energy-efficient lighting products and services that prioritize sustainability without compromising on quality
-          or style.
-          <!-- <br> <br>
-          Explore our wide range of products and discover how we can turn your vision into reality. Whether you're
-          renovating your home or undertaking a large-scale construction project, trust Finishing Warehouse to deliver
-          excellence every step of the way. -->
-        </p>
-        <NuxtLink to="/about">
-          <button class="my-3 text-[#84240C] text-[14px] font-semibold">LEARN MORE</button>
-        </NuxtLink>
-      </div>
 
+      <div
+        class="absolute flex justify-center right-0 left-0 lg:mx-auto mx-4 lg:w-[35%] text-[#84240C] p-4 lg:gap-10 gap-5 lg:top-[540px] top-[300px] bg-white rounded-md">
+        <p class="lg:text-base text-sm">BATHROOMS</p>
+        <div class="border-r border-[#D9D9D9]"></div>
+        <p class="lg:text-base text-sm">KITCHENS</p>
+        <div class="border-r border-[#D9D9D9]"></div>
+        <p class="lg:text-base text-sm">LIFESTYLES</p>
+      </div>
     </div>
-    <div class="lg:px-20 px-4 lg:py-10 py-8">
+
+    <div class="lg:px-20 px-4 lg:py-20 py-8">
       <div class="flex justify-between">
-        <p class="lg:text-[35px] font-medium text-[#84240C] lg:my-3 text-2xl">Bathroom Finish </p>
-      </div>
-      <div class="lg:flex justify-between my-4">
-        <div class="lg:w-[33%] lg:mb-0 mb-4 relative">
-          <!-- <NuxtLink to="/products/1"> -->
-          <img class="w-full" src="/images/categories/002.png" alt="">
-          <p
-            class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
-            Concealed / Hung
-            WCs</p>
+        <div class="lg:w-[50%]">
+          <p class="lg:text-[35px] font-medium text-[#84240C] lg:my-3 text-2xl">Where every product makes
+            a statement </p>
+        </div>
+        <button
+          class="uppercase lg:block hidden my-auto bg-[#84240C] text-white rounded-full px-10 py-2 text-sm">Discover All
+          Products</button>
 
-          <!-- <div class="bg-[#F6F6F6] p-5">
-            <p class=" lg:text-[16px] text-sm font-medium text-center text-[#0F0F0F] ">Concealed / Hung WCs</p>
-          </div> -->
-          <!-- </NuxtLink> -->
-        </div>
-        <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
-          <!-- <NuxtLink to="/products/2"> -->
-          <img class="w-full" src="/images/categories/003.png" alt="">
-          <p
-            class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
-            Mirrors</p>
-          <!-- <div class="bg-[#F6F6F6] p-5">
-            <p class="lg:text-[16px] font-medium text-center text-sm  text-[#0F0F0F] ">Mirrors</p>
-          </div> -->
-          <!-- </NuxtLink> -->
-        </div>
-        <div class="lg:w-[33%] lg:mb-0 mb-4  relative">
-          <!-- <NuxtLink to="/products/3"> -->
-          <img class="w-full" src="/images/categories/001.png" alt="">
-          <p
-            class="absolute bottom-5 p-2 left-5 border-y border-white right-5 lg:text-[20px] text-xl font-medium text-center text-white">
-            Vanities Wash Basins</p>
-          <!-- <div class="bg-[#F6F6F6] p-5">
-            <p class="lg:text-[16px] text-sm font-medium text-center text-[#0F0F0F] ">Vanities Wash Basins</p>
-          </div> -->
-          <!-- </NuxtLink> -->
-        </div>
       </div>
-      <div class="text-center my-3">
-        <NuxtLink to="/products/bathroom-finish">
-          <button
-            class="text-[14px] text-center mx-auto text-[#84240C] lg:w-60 w-[70%] font-semibold p-2 my-auto">DISCOVER
-            MORE
-            <!-- <img class="my-auto ml-4" src="/images/new-arrow.svg" alt=""> -->
-          </button>
-        </NuxtLink>
-      </div>
-      <div class="pt-12 lg:flex">
-        <div class="lg:w-1/2 lg:mb-0 mb-4"> <img class="lg:h-[100vh] object-cover w-full" src="/images/abt-1.png"
-            alt="">
+      <div class="grid lg:grid-cols-3 gap-4 my-4">
+        <div>
+          <img src="/images/products/Home-WCs.jpg" alt="">
+          <p class="my-4 underline">WCs</p>
         </div>
-        <div class="lg:w-1/2 lg:ml-3">
-          <img class="lg:mb-3 mb-4 lg:h-[49vh] object-cover w-full " src="/images/abt-3.png" alt="">
-          <img class=" lg:h-[49vh] object-cover w-full" src="/images/abt-2.png" alt="">
+        <div>
+          <img src="/images/products/Home-Washbasins.jpg" alt="">
+          <p class="my-4 underline">Washbasins</p>
         </div>
-        <!-- <img src="/images/quality-seal.png" class="absolute lg:w-auto w-20 lg:top-10 top-14 left-0 right-0 mx-auto"
-          alt=""> -->
-        <!-- <img src="/images/product-chair.png" class="lg:h-auto h-[209px] object-cover" alt=""> -->
+        <div>
+          <img src="/images/products/Home-Taps-&-Mixers.jpg"" alt="">
+          <p class=" my-4 underline">Taps & Mixers</p>
+        </div>
       </div>
 
-      <div class="pt-14">
-        <p class="lg:text-[35px] text-[#84240C] font-medium text-2xl">Why Choose Us</p>
-        <div class="grid lg:grid-cols-4 gap-3 mt-6">
-          <div v-for="(single, index) in data" :key="index" class="p-6 bg-[#FAFAFA] border border-[#E1E1DF]">
-            <img src="/images/beacon.png" alt="">
-            <p class="text-[#84240C] mt-8 mb-4">{{ single.title }}</p>
-            <p class="text-[#0F0F0F]">{{ single.text }}</p>
+      <div class="text-center">
+        <button
+          class="uppercase lg:hidden mx-auto block my-auto bg-[#84240C] text-white rounded-full px-10 py-2 text-sm">Discover All
+          Products</button>
+      </div>
+    </div>
+    <div class="relative">
+      <img src="/images/New-Showers.jpg" class="lg:h-[90vh] object-cover h-[50vh] " alt="">
+      <div class="bg-[#0F0F0F]/60 absolute top-0 w-full lg:h-[90vh] h-[50vh] ">
+      </div>
+      <div class="absolute lg:text-left text-center text-white lg:right-10 lg:top-32 top-12 bottom-0 lg:w-[30%]">
+        <p class="text-sm mb-6">Our Commitment</p>
+        <p class="text-[26px]">To provide sustainable finishing solutions that enhance your space and improve your
+          quality of life.</p>
+      </div>
+    </div>
+
+    <div class="lg:px-20 px-4 lg:py-20 py-8">
+      <div class="pt-6">
+        <div class="flex my-8 lg:w-1/2 justify-between">
+          <p class="lg:text-[35px] text-[#84240C] wrap font-medium text-2xl">Explore our selection of completed 
+            projects</p>
+        </div>
+        <div class="border-b mb-6 border-[#AFAFAF]"></div>
+
+        <div class="grid lg:grid-cols-2 gap-4">
+          <div>
+            <img src="/images/projects/bathroom-project.jpg" alt="">
+            <p class="my-3 text-medium">Bathroom</p>
+          </div>
+          <div>
+            <img src="/images/projects/kitchen-project.jpg" alt="">
+            <p class="my-3 text-medium">Kitchen</p>
+          </div>
+          <div>
+            <img src="/images/projects/sitting-room-project.jpg" alt="">
+            <p class="my-3 text-medium">Sitting Room</p>
+          </div>
+          <div>
+            <img src="/images/projects/washbasins-project.jpg" alt="">
+            <p class="my-3 text-medium">Washbasin</p>
           </div>
         </div>
+        <div class="border-b my-6 border-[#AFAFAF]"></div>
+
+        <div class="text-center">
+          <button class="uppercase bg-[#84240C] text-white rounded-full px-12 py-2 text-sm">Explore Projects</button>
+        </div>
+
       </div>
+
+      <div class="border-b lg:mb-20 mt-6 border-[#AFAFAF]"></div>
 
       <div class="pt-6">
-        <div class="flex my-8 justify-between">
-          <p class="lg:text-[35px] text-[#84240C] font-medium text-2xl">Projects</p>
-          <div class="flex lg:w-28 w- justify-between">
-            <img @click="myCarousel.prev()" class="w-12 cursor-pointer" src="/images/prev.svg" alt="">
-            <img @click="myCarousel.next()" class="w-12 lg:ml-0 ml-2 cursor-pointer" src="/images/next.svg" alt="">
+        <div class="grid lg:grid-cols-2 gap-3">
+          <div>
+            <div class="border-b lg:py-4 border-[#AFAFAF]">
+              <p class="lg:text-[35px] text-[#84240C] font-medium text-2xl lg:mb-0 mb-4"> Why Finishing Warehouse
+              </p>
+            </div>
+
+            <div class="font-medium text-[18px]">
+              <p class="text-[#84240C] mb-4 mt-8">We set trends</p>
+              <p class="text-[#0F0F0F]">
+                Our offerings are inspired by global styles and tailored for the Nigerian market.</p>
+            </div>
+            <div class="font-medium text-[18px]">
+              <p class="text-[#84240C] mb-4 mt-8">We ensure quality</p>
+              <p class="text-[#0F0F0F]">
+                Partnering with trusted international and local brands, we deliver only the best
+                materials and products.
+              </p>
+            </div>
+            <div class="font-medium text-[18px]">
+              <p class="text-[#84240C] mb-4 mt-8">We focus on you</p>
+              <p class="text-[#0F0F0F]">
+                Personalized consultations and bespoke solutions ensure that every client’s needs are
+                met.
+              </p>
+            </div>
+            <div class="font-medium text-[18px]">
+              <p class="text-[#84240C] mb-4 mt-8">We transform spaces</p>
+              <p class="text-[#0F0F0F]">
+                Beyond products, we deliver a lifestyle upgrade that makes every home stand out.
+                met.
+              </p>
+            </div>
+          </div>
+          <div class="my-auto">
+            <img class="lg:mt-12" src="/images/Why-Finishing-Warehouse.jpg" alt="">
           </div>
         </div>
-        <Carousel ref="myCarousel" :breakpoints="breakpoints">
-          <slide v-for="slide in 3" :key="slide">
-            <div class="mr-2">
-              <img class="w-full" :src="'/images/projects/projects' + slide + '.png'" alt="">
-            </div>
-          </slide>
-        </Carousel>
       </div>
+
       <div class="pt-6">
         <div class="my-8">
           <div class="border-b lg:py-6 text-center my-6 vorder-[#7D7D7D]">
             <p class="lg:text-[35px] text-[#84240C] font-medium text-2xl lg:mb-0 mb-4">Brand Partners</p>
           </div>
-          <div class="lg:flex hidden justify-between flex-wrap">
-            <div class="mb-3 lg:w-[13%] w-[48%]" v-for="index in 7" :key="index">
-              <img class="" :src="'/images/brands/00' + index + '.png'" alt="">
-            </div>
-          </div>
-          <div class="lg:hidden block">
-            <Carousel snap-align="start" pause-autoplay-on-hover="true" items-to-show="2" transition="1500"
-              :items-to-scroll="2" wrap-around="true" autoplay="1">
-              <slide v-for="index in 7" :key="slide">
-                <div>
+          <div class="">
+            <Carousel snap-align="start" pause-autoplay-on-hover="true" :items-to-show="7" :transition="1500"
+              :items-to-scroll="1" :wrap-around="true" :autoplay="3000" :breakpoints="{
+                300: {
+                  itemsToShow: 2,
+                  snapAlign: 'center',
+                },
+                400: {
+                  itemsToShow: 2,
+                  snapAlign: 'start',
+                },
+                500: {
+                  itemsToShow: 7,
+                  snapAlign: 'start',
+                },
+              }">
+              <slide v-for="index in 9" :key="slide">
+                <div class="p-2">
                   <img class="" :src="'/images/brands/00' + index + '.png'" alt="">
                 </div>
               </slide>
