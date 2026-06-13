@@ -33,9 +33,6 @@ const setToggle = () => {
       <NuxtLink to="/" @click="scrollToTop()">
         <p @click="dropdown = false">Home</p>
       </NuxtLink>
-      <NuxtLink to="/what-we-offer" @click="scrollToTop()">
-        <p @click="dropdown = false">What We Offer</p>
-      </NuxtLink>
       <p class="flex cursor-pointer">
         <NuxtLink to="/products">
           Products
@@ -43,6 +40,9 @@ const setToggle = () => {
         <!-- <img v-if="dropdown" class="my-auto ml-2" src="/images/icons/more.svg" alt="">
         <img v-else class="my-auto rotate-180 ml-2" src="/images/icons/more.svg" alt=""> -->
       </p>
+      <NuxtLink to="/services" @click="scrollToTop()">
+        <p @click="dropdown = false">Services</p>
+      </NuxtLink>
       <NuxtLink to="/projects">
         <p @click="dropdown = false">Projects</p>
       </NuxtLink>
@@ -116,44 +116,47 @@ const setToggle = () => {
       </div>
     </div>
     <div v-if="toggle" class="fixed text-[#0F0F0F] top-0 left-0 w-full p-6 h-screen bg-white">
-      <img @click="toggle = false" class="ml-auto -mt-3 cursor-pointer" src="/images/icons/close.svg" alt="">
-      <div class="border-b my-4 mt-8  border-[#D9D9D9]">
+      <img @click="toggle = false" class="ml-auto mt-2 cursor-pointer" src="/images/close.svg" alt="">
+      <div class="border-b my-4 mt-20  border-[#D9D9D9]">
         <NuxtLink to="/" @click="toggle = !toggle, scrollToTop()">
-          <p class="text-3xl py-3">Home</p>
+          <p class="text-2xl py-3 uppercase">Home</p>
         </NuxtLink>
       </div>
-      <div class="border-b my-4  border-[#D9D9D9]">
-        <NuxtLink to="/what-we-offer" @click="toggle = !toggle, scrollToTop()">
-          <p class="text-3xl py-3">What We Offer</p>
-        </NuxtLink>
-      </div>
+
       <div class="border-b py-3 flex flex-wrap justify-between my-4 border-[#D9D9D9]">
         <NuxtLink to="/products" @click="toggle = !toggle">
-          <p class="text-3xl ">Products</p>
+          <p class="text-2xl uppercase">Products</p>
         </NuxtLink>
-        <!-- <img v-if="products === false" @click="products = !products" class="w-6 cursor-pointer"
-          src="/images/icons/plus.svg" alt="">
-        <img v-else class="w-6 cursor-pointer" @click="products = !products" src="/images/icons/hide.svg" alt="">
+        <img v-if="products === false" @click="products = !products" class="w-6 cursor-pointer"
+          src="/images/caret-down-2.svg" alt="">
+        <img v-else class="w-6 cursor-pointer" @click="products = !products" src="/images/caret-down-1.svg" alt="">
 
         <div class="w-full" v-show="products">
           <MobileProducts :toggle="setToggle" />
-        </div> -->
+        </div>
+      </div>
+      <div class="border-b my-4  border-[#D9D9D9]">
+        <NuxtLink to="/services" @click="toggle = !toggle, scrollToTop()">
+          <p class="text-2xl uppercase py-3">Services</p>
+        </NuxtLink>
       </div>
       <div class="border-b my-4 border-[#D9D9D9]">
         <NuxtLink to="/projects" @click="toggle = !toggle">
-          <p class="text-3xl py-3">Projects</p>
+          <p class="text-2xl uppercase py-3">Projects</p>
         </NuxtLink>
       </div>
       <div class="border-b my-4 border-[#D9D9D9]">
         <NuxtLink to="/about" @click="toggle = !toggle">
-          <p class="text-3xl py-3">About us</p>
+          <p class="text-2xl uppercase py-3">About us</p>
         </NuxtLink>
       </div>
       <div class="border-b my-4 border-[#D9D9D9]">
         <NuxtLink to="/contact" @click="toggle = !toggle">
-          <p class="text-3xl py-3">Contact</p>
+          <p class="text-2xl uppercase py-3">Contact</p>
         </NuxtLink>
       </div>
+
+      <button class="uppercase text-sm text-white p-3 w-full mt-20 bg-[#84240C]">Get in Touch</button>
     </div>
   </div>
 </template>

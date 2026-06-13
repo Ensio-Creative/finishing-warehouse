@@ -132,8 +132,8 @@ export default defineComponent({
 
     <div class="lg:px-20 px-4 lg:py-20 py-8">
       <div class="pt-6">
-        <div class="flex my-8 lg:w-1/2 justify-between">
-          <p class="lg:text-[35px] text-[#84240C] wrap font-medium text-2xl">Explore our selection of completed 
+        <div class="my-8 lg:w-1/2 w-[80%]">
+          <p class="lg:text-[35px] text-[#84240C] text-wrap font-medium text-2xl">Explore our selection of completed 
             projects</p>
         </div>
         <div class="border-b mb-6 border-[#AFAFAF]"></div>

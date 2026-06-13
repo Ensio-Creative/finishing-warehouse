@@ -51,10 +51,10 @@ export default defineComponent({
 <template>
 
   <Head>
-    <Title>What We Do - Finishing Warehouse </Title>
+    <Title>Services - Finishing Warehouse </Title>
   </Head>
   <main>
-    <HeroComp img="wwo" text="What We offer" />
+    <HeroComp img="wwo" text="Services" />
 
     <section class="lg:px-20 px-4 pt-20 pb-10">
       <div v-for="(item, index) in data" :key="index" class="lg:flex mb-12">

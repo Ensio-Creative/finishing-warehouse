@@ -7,13 +7,11 @@ export default {
     return {
       slider: [
         "",
-        "Bathroom Finish",
-        "Wall Finish",
-        "Kitchen Finish",
-        "Outdoor Finish",
-        "Home Decor",
-        "Lighting ",
-        "Curtains"
+        "WCs",
+        "Washbasins",
+        "Taps & Mixers",
+        "Showers",
+        "Assessories",
       ]
     }
   },
@@ -31,7 +29,7 @@ export default {
   <div class="my-6">
     <div v-for="slide in 8" :key="slide">
       <NuxtLink :to="'/products/' + slide" @click="toggle">
-        <div class="text-xl">{{
+        <div class="text-xl my-2">{{
           slider[slide] }}</div>
       </NuxtLink>
     </div>
