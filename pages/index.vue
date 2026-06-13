@@ -93,30 +93,43 @@ export default defineComponent({
           <p class="lg:text-[35px] font-medium text-[#84240C] lg:my-3 text-2xl">Where every product makes
             a statement </p>
         </div>
-        <button
-          class="uppercase lg:block hidden my-auto bg-[#84240C] text-white rounded-full px-10 py-2 text-sm">Discover All
-          Products</button>
+        <NuxtLink to="/products">
+          <button
+            class="uppercase lg:block hidden my-auto bg-[#84240C] text-white rounded-full px-10 py-2 text-sm">Discover
+            All
+            Products</button>
+        </NuxtLink>
 
       </div>
       <div class="grid lg:grid-cols-3 gap-4 my-4">
         <div>
           <img src="/images/products/Home-WCs.jpg" alt="">
-          <p class="my-4 underline">WCs</p>
+          <NuxtLink to="/products/wcs">
+            <p class="my-4 underline">WCs</p>
+          </NuxtLink>
         </div>
         <div>
           <img src="/images/products/Home-Washbasins.jpg" alt="">
-          <p class="my-4 underline">Washbasins</p>
+          <NuxtLink to="/products/washbasins">
+            <p class="my-4 underline">Washbasins</p>
+          </NuxtLink>
         </div>
         <div>
           <img src="/images/products/Home-Taps-&-Mixers.jpg"" alt="">
+          <NuxtLink to="/products/taps-mixers">
           <p class=" my-4 underline">Taps & Mixers</p>
+          </NuxtLink>
         </div>
       </div>
 
       <div class="text-center">
-        <button
-          class="uppercase lg:hidden mx-auto block my-auto bg-[#84240C] text-white rounded-full px-10 py-2 text-sm">Discover All
-          Products</button>
+        <NuxtLink to="/products">
+          <button
+            class="uppercase lg:hidden mx-auto block my-auto bg-[#84240C] text-white rounded-full px-10 py-2 text-sm">Discover
+            All
+            Products
+          </button>
+        </NuxtLink>
       </div>
     </div>
     <div class="relative">
@@ -133,7 +146,7 @@ export default defineComponent({
     <div class="lg:px-20 px-4 lg:py-20 py-8">
       <div class="pt-6">
         <div class="my-8 lg:w-1/2 w-[80%]">
-          <p class="lg:text-[35px] text-[#84240C] text-wrap font-medium text-2xl">Explore our selection of completed 
+          <p class="lg:text-[35px] text-[#84240C] text-wrap font-medium text-2xl">Explore our selection of completed
             projects</p>
         </div>
         <div class="border-b mb-6 border-[#AFAFAF]"></div>
@@ -159,7 +172,9 @@ export default defineComponent({
         <div class="border-b my-6 border-[#AFAFAF]"></div>
 
         <div class="text-center">
-          <button class="uppercase bg-[#84240C] text-white rounded-full px-12 py-2 text-sm">Explore Projects</button>
+          <NuxtLink to="/projects">
+            <button class="uppercase bg-[#84240C] text-white rounded-full px-12 py-2 text-sm">Explore Projects</button>
+          </NuxtLink>
         </div>
 
       </div>

@@ -1,7 +1,7 @@
 <script setup>
 const products = ref([
   {
-    title: "Bathroom Finish",
+    title: "WCs",
     products: [
       "Closed Coupled WCs",
       "Concealed / Hung WCs",
@@ -12,56 +12,46 @@ const products = ref([
       "Shower Channels | Drains",
       "Bathroom Essentials"
     ],
-    slug: "bathroom-finish"
+    slug: "wcs"
   }, {
-    title: "Wall Finish",
+    title: "Washbasins",
     products: [],
-    slug: ""
+    slug: "washbasins"
   }, {
-    title: "Kitchen Finish",
+    title: "Taps & Mixers",
     products: [],
-    slug: ""
+    slug: "taps-mixers"
   }, {
-    title: "Outdoor Finish",
+    title: "Showers",
     products: [],
-    slug: ""
+    slug: "showers"
   }, {
-    title: "Home Decor",
+    title: "Assessories",
     products: [],
-    slug: ""
-  }, {
-    title: "Lighting",
-    products: [],
-    slug: ""
-  }, {
-    title: "Curtains",
-    products: [],
-    slug: ""
+    slug: "assessories"
   }
 ])
 
-// onMounted(() => {
-//   console.log(route.params.slug)
-//   products.map(single => single.slug === $route.params.slug ? active.value = single : null)
-// })
-
+const route = useRoute()
+const activeCategory = computed(() => products.value.find(p => p.slug === route.params.slug) || null)
 </script>
 
 <template>
-
   <Head>
-    <Title>{{ products[0].title }} - Finishing Warehouse </Title>
+    <title>{{ activeCategory?.title || 'Products' }} - Finishing Warehouse</title>
   </Head>
-  <div>
-    <HeroComp :img="1" :text="products[0].title" />
+  <div v-if="activeCategory">
+    <HeroComp :img="1" :text="activeCategory.title" />
     <div class="lg:px-20 lg:py-20 py-12 px-4">
-      <!-- <p class="lg:text-4xl mb-6 font-semibold text-3xl">{{ products[$route.params.slug].title }}</p> -->
+      <p class="lg:text-4xl mb-6 font-semibold text-3xl">{{ activeCategory.title }}</p>
       <div class="flex flex-wrap justify-between">
-        <div class="mb-5 lg:w-[33%]" v-for="slide in 8" :key="slide">
-          <img :src="'/images/products/2/img' + slide + '.png'" alt="">
-          <p class="p-2 text-center text-[16px] text-[#0F0F0F] font-medium">{{ products[0].products[slide - 1] }}</p>
+        <div class="mb-5 lg:w-[33%]" v-for="(product, idx) in activeCategory.products" :key="idx">
+          <img :src="'/images/products/2/img' + (idx + 1) + '.png'" alt="">
+          <p class="p-2 text-center text-[16px] text-[#0F0F0F] font-medium">{{ product }}</p>
         </div>
-        <div class="lg:w-[33%]"></div>
+        <div class="lg:w-[33%]" v-if="!activeCategory.products.length">
+          <p>No products available for this category yet.</p>
+        </div>
       </div>
     </div>
   </div>
