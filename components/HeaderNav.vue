@@ -87,7 +87,7 @@ const setToggle = () => {
         <div class="w-full" v-show="products">
           <div v-for="cat in productCategories" :key="cat.slug">
             <NuxtLink :to="`/products/${cat.slug}`" @click="toggle = false, products = false">
-              <p class="text-lg uppercase py-3 pl-4">{{ cat.name }}</p>
+              <p class="text-lg capitalize py-3">{{ cat.name }}</p>
             </NuxtLink>
           </div>
         </div>

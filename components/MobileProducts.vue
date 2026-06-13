@@ -29,7 +29,7 @@ export default {
   <div class="my-6">
     <div v-for="slide in 8" :key="slide">
       <NuxtLink :to="'/products/' + slide" @click="toggle">
-        <div class="text-xl my-2">{{
+        <div class="text-xl my-3">{{
           slider[slide] }}</div>
       </NuxtLink>
     </div>
