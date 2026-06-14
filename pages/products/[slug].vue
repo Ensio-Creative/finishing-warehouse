@@ -91,7 +91,7 @@ const products = ref([
     ],
     slug: "showers"
   }, {
-    title: "Assessories",
+    title: "Accessories",
     products: [
       "Square Floor Drain ",
       "Towel Ring Chrome",
@@ -117,7 +117,7 @@ const products = ref([
       "Rectangular LED Mirror",
       "Square LED Mirror",
     ],
-    slug: "assessories"
+    slug: "accessories"
   }
 ])
 
@@ -132,17 +132,17 @@ const activeCategory = computed(() => products.value.find(p => p.slug === route.
   </Head>
   <div v-if="activeCategory">
     <!-- <HeroComp :img="1" :text="activeCategory.title" /> -->
-    <div class="lg:px-20 lg:py-20 py-12 px-4 mt-10">
+    <div class="lg:px-20 lg:py-20 py-12 px-4 my-20">
       <p class="lg:text-4xl text-[#84240C] mb-6 font-semibold text-3xl">{{ activeCategory.title }}</p>
       <div class="border-b my-6 border-[#DEDEDE]"></div>
 
       <div class="grid lg:grid-cols-4 grid-cols-2 gap-4">
         <div v-for="(product, idx) in activeCategory.products" :key="idx">
-          <div class="border border-[#DEDEDE]">
-            <img class="lg:h-[300px]  h-[200px] w-[80%] mx-auto object-scale-down"
+          <div class="border border-[#DEDEDE] lg:h-[300px] h-[200px] flex items-center justify-center">
+            <img class="lg:h-[230px] my-auto h-[200px] w-[80%] mx-auto object-scale-down"
               :src="'/images/products/' + activeCategory.slug + '/img-' + (idx + 1) + '.jpg'" alt="">
           </div>
-          <p class="p-2 lg:text-[18px] text-[#0F0F0F]">{{ product }}</p>
+          <p class="p-2 lg:text-[16px] text-[#0F0F0F] mt-2">{{ product }}</p>
 
         </div>
       </div>

@@ -7,7 +7,7 @@
     <HeroComp img="about" text="About us" />
     <div class="lg:flex lg:px-20 px-4 lg:py-20 py-12">
       <div class="lg:w-[50%] lg:mr-10">
-        <p class="lg:text-[35px] text-[#84240C] text-2xl font-medium mb-4">Finishing that Speak</p>
+        <p class="lg:text-[35px] text-[#84240C] text-2xl font-medium mb-8">Finishing that Speak</p>
         <p class="">
           At Finishing Warehouse Nigeria Limited, we specialize in crafting bathrooms and kitchens that inspire and
           elevate lifestyles. Based in the vibrant city of Abuja, Nigeria, our mission is simple yet profound: to
@@ -18,7 +18,7 @@
           offer is meticulously selected to bring these visions to life.
         </p>
       </div>
-      <div class="lg:w-[50%] lg:mt-0 mt-6">
+      <div class="lg:w-[50%] lg:mt-0 mt-10">
         <img src="/images/About-Bathroom.jpg" class="w-full h-full object-cover" alt="">
       </div>
     </div>
@@ -104,7 +104,7 @@
     <div class="border-b lg:mx-20 border-[#AFAFAF]"></div>
 
     <section class="lg:px-20 py-20 p-4">
-      <div class="lg:w-1/2 mx-auto mb-20 text-center">
+      <div class="lg:w-1/2 mx-auto mb-16 text-center">
         <p class="lg:text-[35px] text-[#84240C] mb-4 text-2xl font-medium">Our Team Members</p>
         <p class="text-[#0F0F0F]">Meet our dedicated team at Finishing Warehouse, where passion, professionalism, and a
           commitment to sustainability drive us to deliver eco-friendly, high-quality solutions that bring your vision

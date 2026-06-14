@@ -9,7 +9,7 @@ const productCategories = [
   { name: 'Washbasins', slug: 'washbasins' },
   { name: 'Taps & Mixers', slug: 'taps-mixers' },
   { name: 'Showers', slug: 'showers' },
-  { name: 'Assessories', slug: 'assessories' }
+  { name: 'Accessories', slug: 'accessories' }
 ]
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -36,7 +36,7 @@ const setToggle = () => {
       <img class="lg:w-auto w-[140px] my-auto" src="/images/logo.png" />
     </NuxtLink>
     <img @click="toggle = !toggle" class="lg:hidden block cursor-pointer" src="/images/icons/bars.svg" alt="">
-    <div class="w-[40%] z-10 uppercase text-[#0F0F0F] lg:flex hidden justify-between my-auto font-medium text-[12px]">
+    <div class="w-[45%] z-10 uppercase text-[#0F0F0F] lg:flex hidden justify-between my-auto font-medium text-[12px]">
       <NuxtLink to="/" @click="scrollToTop()">
         <p @click="dropdown = false">Home</p>
       </NuxtLink>
@@ -45,11 +45,11 @@ const setToggle = () => {
           <NuxtLink to="/products">
             Products
           </NuxtLink>
-          <img v-if="dropdown" class="my-auto ml-2" src="/images/caret-down-2.svg" alt="">
-          <img v-else class="my-auto ml-2" src="/images/caret-down-1.svg" alt="">
+          <img v-if="dropdown" class="my-auto ml-2" src="/images/caret-down-1.svg" alt="">
+          <img v-else class="my-auto ml-2" src="/images/caret-down-2.svg" alt="">
         </p>
         <div v-if="dropdown" class="absolute top-full left-0 bg-white shadow-lg py-2 min-w-[200px] z-40">
-          <NuxtLink v-for="cat in productCategories" :key="cat.slug" :to="`/products/${cat.slug}`" class="block px-4 capitalize py-2 hover:bg-gray-100" @click="dropdown = false">
+          <NuxtLink v-for="cat in productCategories" :key="cat.slug" :to="`/products/${cat.slug}`" class="block text-[14px] px-4 capitalize py-2 hover:bg-gray-100" @click="dropdown = false">
             {{ cat.name }}
           </NuxtLink>
         </div>
@@ -70,7 +70,7 @@ const setToggle = () => {
 
     <div v-if="toggle" class="fixed text-[#0F0F0F] top-0 left-0 w-full p-6 h-screen bg-white">
       <img @click="toggle = false" class="ml-auto mt-2 cursor-pointer" src="/images/close.svg" alt="">
-      <div class="border-b my-4 mt-20  border-[#D9D9D9]">
+      <div class="border-b my-4 mt-32  border-[#D9D9D9]">
         <NuxtLink to="/" @click="toggle = !toggle, scrollToTop()">
           <p class="text-2xl py-3 uppercase">Home</p>
         </NuxtLink>
@@ -87,7 +87,7 @@ const setToggle = () => {
         <div class="w-full" v-show="products">
           <div v-for="cat in productCategories" :key="cat.slug">
             <NuxtLink :to="`/products/${cat.slug}`" @click="toggle = false, products = false">
-              <p class="text-lg capitalize py-3">{{ cat.name }}</p>
+              <p class="text-lg capitalize py-2">{{ cat.name }}</p>
             </NuxtLink>
           </div>
         </div>
@@ -113,7 +113,7 @@ const setToggle = () => {
         </NuxtLink>
       </div>
 
-      <button class="uppercase text-sm text-white p-3 w-full mt-20 bg-[#84240C]">Get in Touch</button>
+      <!-- <button class="uppercase text-sm text-white p-3 w-full mt-20 bg-[#84240C]">Get in Touch</button> -->
     </div>
   </div>
 </template>
