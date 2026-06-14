@@ -55,7 +55,7 @@ export default defineComponent({
 <template>
 
   <Head>
-    <Title>Finishing Warehouse - Home for innovative and eco-friendly bathroom solutions</Title>
+    <Title>Finishing Warehouse - Home for innovative and eco-friendly finishing solutions</Title>
   </Head>
   <div>
     <div class="relative mt-20">
