@@ -117,7 +117,7 @@ export default defineComponent({
         <div>
           <img src="/images/products/Home-Taps-&-Mixers.jpg" alt="">
           <NuxtLink to="/products/taps-mixers">
-          <p class="my-4 underline">Taps & Mixers</p>
+            <p class="my-4 underline">Taps & Mixers</p>
           </NuxtLink>
         </div>
       </div>
@@ -133,13 +133,13 @@ export default defineComponent({
       </div>
     </div>
     <div class="relative">
-      <img src="/images/New-Showers.jpg" class="lg:h-[90vh] w-full object-cover h-[60vh] " alt="">
-      <div class="bg-[#0F0F0F]/60 absolute top-0 w-full lg:h-[90vh] h-[60vh] ">
+      <img src="/images/New-Showers.jpg" class="lg:h-[700px] w-full object-cover h-[60vh] " alt="">
+      <div class="bg-[#0F0F0F]/60 absolute top-0 w-full lg:h-[700px] h-[60vh] ">
       </div>
       <div
-        class="absolute lg:text-left text-white lg:left-20 lg:p-0 p-4 lg:top-96 lg:mt-0 mt-20 top-24 bottom-0 lg:w-[30%]">
+        class="absolute lg:text-left text-white lg:left-20 lg:p-0 p-4 lg:top-96 lg:mt-0 mt-20 top-24 bottom-0 lg:w-[475px]">
         <p class="text-sm mb-6">Our Commitment</p>
-        <p class="text-[26px]">To provide sustainable finishing solutions that enhance your space and improve your
+        <p class="text-[35px] leading-tight">To provide sustainable finishing solutions that enhance your space and improve your
           quality of life.</p>
       </div>
     </div>
@@ -229,7 +229,13 @@ export default defineComponent({
           <div class="border-b lg:py-8 text-center my-8 vorder-[#7D7D7D]">
             <p class="lg:text-[35px] text-[#84240C] font-medium text-2xl lg:mb-0 mb-4">Brand Partners</p>
           </div>
-          <div class="">
+          <div class="hidden lg:grid grid-cols-7 gap-4">
+            <div v-for="index in 7" :key="index" class="p-2">
+              <img class="" :src="'/images/brands/00' + index + '.png'" alt="">
+            </div>
+
+          </div>
+          <div class="lg:hidden block">
             <Carousel snap-align="start" pause-autoplay-on-hover="true" :items-to-show="7" :transition="1500"
               :items-to-scroll="1" :wrap-around="true" :autoplay="3000" :breakpoints="{
                 300: {

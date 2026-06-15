@@ -123,7 +123,7 @@
         </div>
         <div class="text-center">
           <img class="mx-auto" src="/images/team/img-3.png" alt="">
-          <p class="text-[#0F0F0F] mt-4 font-medium">Mr. Raji Elijah</p>
+          <p class="text-[#0F0F0F] mt-4 font-medium">Isah Abubakar</p>
           <p class="text-[#0F0F0F] text-sm">WAREHOUSE OFFICER</p>
         </div>
         <div class="text-center">
