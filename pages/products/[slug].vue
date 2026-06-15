@@ -127,10 +127,10 @@ const activeCategory = computed(() => products.value.find(p => p.slug === route.
 
 <template>
 
-  <Head>
-    <title>{{ activeCategory?.title || 'Products' }} - Finishing Warehouse</title>
-  </Head>
   <div v-if="activeCategory">
+    <Head>
+      <title>{{ activeCategory.title }} - Finishing Warehouse</title>
+    </Head>
     <!-- <HeroComp :img="1" :text="activeCategory.title" /> -->
     <div class="lg:px-20 lg:py-20 py-12 px-4 my-20">
       <p class="lg:text-4xl text-[#84240C] mb-6 font-semibold text-3xl">{{ activeCategory.title }}</p>

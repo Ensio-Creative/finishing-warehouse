@@ -129,7 +129,7 @@
         <div class="text-center">
           <img class="mx-auto" src="/images/team/img-4.png" alt="">
           <p class="text-[#0F0F0F] mt-4 font-medium">Ms. Rita Okoye</p>
-          <p class="text-[#0F0F0F] text-sm">HEAD OF SALE & MARKETING</p>
+          <p class="text-[#0F0F0F] text-sm">HEAD OF SALES & MARKETING</p>
         </div>
       </div>
     </section>
