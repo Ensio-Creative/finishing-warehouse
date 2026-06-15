@@ -139,7 +139,7 @@ export default defineComponent({
       <div
         class="absolute lg:text-left text-white lg:left-20 lg:p-0 p-4 lg:top-96 lg:mt-0 mt-20 top-24 bottom-0 lg:w-[475px]">
         <p class="text-sm mb-6">Our Commitment</p>
-        <p class="text-[35px] leading-tight">To provide sustainable finishing solutions that enhance your space and improve your
+        <p class="lg:text-[35px] text-2xl leading-tight">To provide sustainable finishing solutions that enhance your space and improve your
           quality of life.</p>
       </div>
     </div>
