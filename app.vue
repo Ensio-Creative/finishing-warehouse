@@ -2,7 +2,7 @@
   <NuxtLoadingIndicator />
   <div class="app">
     <HeaderNav />
-    <NuxtPage />
+    <NuxtPage :key="$route.fullPath" />
     <FooterNav />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent, ref, reactive } from 'vue'
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
@@ -115,9 +115,9 @@ export default defineComponent({
           </NuxtLink>
         </div>
         <div>
-          <img src="/images/products/Home-Taps-&-Mixers.jpg"" alt="">
-          <NuxtLink to=" /products/taps-mixers">
-          <p class=" my-4 underline">Taps & Mixers</p>
+          <img src="/images/products/Home-Taps-&-Mixers.jpg" alt="">
+          <NuxtLink to="/products/taps-mixers">
+          <p class="my-4 underline">Taps & Mixers</p>
           </NuxtLink>
         </div>
       </div>
@@ -245,7 +245,7 @@ export default defineComponent({
                   snapAlign: 'start',
                 },
               }">
-              <slide v-for="index in 9" :key="slide">
+              <slide v-for="index in 7" :key="index">
                 <div class="p-2">
                   <img class="" :src="'/images/brands/00' + index + '.png'" alt="">
                 </div>
