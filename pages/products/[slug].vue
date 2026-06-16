@@ -3,8 +3,8 @@ const products = ref([
   {
     title: "WCs",
     products: [
-      "Two Piece Poilet",
-      "Two Piece Poilet",
+      "Two Piece Toilet",
+      "One Piece Toilet",
       "Washdown Rimless One Piece Toilet",
       "Rimless Wall Hung Toilet",
       "Vortex Wall Hung Toilet",
